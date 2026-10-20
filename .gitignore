@@ -1,0 +1,14 @@
+# Private: raw WhatsApp export (members' messages, photos, voice notes). Never publish.
+*WhatsApp*/
+*Alarplasty Reversal Research*/
+_chat.txt
+*.opus
+
+# Private research notes and project instructions (contain names)
+research/
+CLAUDE.md
+
+# Mac / Python junk
+.DS_Store
+__pycache__/
+*.pyc

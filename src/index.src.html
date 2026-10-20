@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alarplasty Repair Guide</title>
+<meta name="description" content="A plain-language guide to repairing an over-done alarplasty (nostril reduction): derotation, composite grafts and flaps, what patients found, and what the research says.">
+<meta property="og:title" content="Alarplasty Repair Guide">
+<meta property="og:description" content="What a group of alarplasty patients learned in seven months of research, explained simply.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6F9; --band:#E9EDF3; --card:#FFFFFF; --ink:#1B2133; --ink-2:#4A5168; --ink-3:#6D7389;
+  --line:#D6DCE6; --accent:#34409A; --accent-soft:#E3E6F5;
+  --skin:#B97A52; --skin-2:#8C5536; --skin-lip:#C98D66; --nostril:#3A2219;
+  --cartilage:#CFE0F2; --earskin:#EDC3AC; --blood:#C2353D;
+  --good:#2C7454; --maybe:#9A6B10; --risky:#A8435A;
+  --good-soft:#E1F0E8; --maybe-soft:#F6ECD5; --risky-soft:#F5E0E5;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --measure:44rem; --wide:70rem;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12161F; --band:#181D29; --card:#1C2230; --ink:#E7EAF2; --ink-2:#B2B8CA; --ink-3:#8E95AB;
+    --line:#2C3346; --accent:#A4ACF0; --accent-soft:#262C4A;
+    --good:#6CC59C; --maybe:#E1B45A; --risky:#E58EA0;
+    --good-soft:#1B3127; --maybe-soft:#332A16; --risky-soft:#382129;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12161F; --band:#181D29; --card:#1C2230; --ink:#E7EAF2; --ink-2:#B2B8CA; --ink-3:#8E95AB;
+  --line:#2C3346; --accent:#A4ACF0; --accent-soft:#262C4A;
+  --good:#6CC59C; --maybe:#E1B45A; --risky:#E58EA0;
+  --good-soft:#1B3127; --maybe-soft:#332A16; --risky-soft:#382129;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.4rem}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.12rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+strong{font-weight:600}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;margin:0;color:var(--ink);font-weight:600;letter-spacing:-.005em}
+h2{font-size:clamp(1.9rem,4vw,2.5rem)}
+h3{font-size:1.5rem}
+h4{font-size:1.15rem;margin:1.4rem 0 .4rem}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem;padding-left:1.3rem}
+li{margin:.3rem 0}
+.wrap{max-width:var(--wide);margin:0 auto;padding:0 1.25rem}
+.read{max-width:var(--measure)}
+.muted{color:var(--ink-2)}
+.small{font-size:.92rem}
+.skip{position:absolute;left:-999px;top:.5rem;background:var(--card);padding:.5rem 1rem;z-index:99}
+.skip:focus{left:1rem}
+
+/* nav */
+.topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:1rem;height:3.6rem}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.08rem;color:var(--ink);text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:.5rem}
+.brand svg{width:24px;height:24px}
+.navlinks{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{font-size:.95rem;color:var(--ink-2);text-decoration:none;padding:.32rem .65rem;border-radius:6px;white-space:nowrap;font-weight:500}
+.navlinks a b{font-family:var(--serif);color:var(--accent);margin-right:.3rem;font-weight:700}
+.navlinks a:hover,.navlinks a[aria-current="true"]{background:var(--accent-soft);color:var(--ink)}
+.themebtn{border:1px solid var(--line);background:transparent;color:var(--ink-2);border-radius:8px;width:2.2rem;height:2.2rem;display:grid;place-items:center;cursor:pointer;flex:none}
+@media (max-width:640px){.brand span{display:none}}
+
+/* hero */
+.hero{padding:3.2rem 0 2.6rem}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.4vw,3.9rem);line-height:1.05;margin-bottom:1rem;font-weight:700}
+.hero .lede{font-size:1.26rem;color:var(--ink-2);max-width:34rem}
+.hero .meta{font-size:.95rem;color:var(--ink-3);margin-top:1rem}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:2rem}}
+.sketch{width:100%;height:auto}
+.sketch text{font-family:var(--sans);fill:var(--ink);font-weight:500}
+.sketch .lead{fill:none;stroke:var(--ink-2);stroke-width:1.5;stroke-linecap:round}
+.sketch .cut{fill:var(--blood);fill-opacity:.28;stroke:var(--blood);stroke-width:2;stroke-dasharray:5 4}
+.sketch .cutlabel{fill:var(--risky);font-weight:700}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem 1.1rem;margin:0}
+.panel figcaption{font-size:.95rem;color:var(--ink-2);margin-top:.4rem}
+
+/* sections */
+.sec{padding:4rem 0 3.2rem;border-top:1px solid var(--line)}
+.sec.band{background:var(--band)}
+.eyebrow{font-family:var(--serif);font-style:italic;color:var(--ink-3);font-size:1.1rem;margin:0 0 .3rem}
+.sum{font-size:1.2rem;color:var(--ink-2);max-width:var(--measure);margin-top:.6rem}
+
+/* method headers */
+.mhead{display:flex;gap:1.1rem;align-items:flex-start;margin-bottom:1.2rem}
+.mnum{flex:none;width:3.6rem;height:3.6rem;border-radius:12px;background:var(--accent);color:#fff;font-family:var(--serif);font-weight:700;font-size:2rem;display:grid;place-items:center;line-height:1}
+:root[data-theme="dark"] .mnum{color:#12161F}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .mnum{color:#12161F}}
+.mhead h2{margin-top:.15rem}
+.pills{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.6rem}
+.pill{display:inline-block;white-space:nowrap;font-size:.88rem;padding:.2rem .65rem;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);background:var(--card);font-weight:500}
+.pill.v-good{background:var(--good-soft);color:var(--good);border-color:transparent;font-weight:600}
+.pill.v-maybe{background:var(--maybe-soft);color:var(--maybe);border-color:transparent;font-weight:600}
+.pill.v-risky{background:var(--risky-soft);color:var(--risky);border-color:transparent;font-weight:600}
+.indent{margin-left:4.7rem}
+@media (max-width:700px){.indent{margin-left:0}.mnum{width:2.8rem;height:2.8rem;font-size:1.6rem}}
+.sub{border-left:3px solid var(--accent);padding-left:1.5rem;margin:2.6rem 0 0}
+.shead{display:flex;gap:.8rem;align-items:baseline;margin-bottom:.6rem;flex-wrap:wrap}
+.snum{font-family:var(--serif);font-weight:700;color:var(--accent);font-size:1.5rem}
+@media (max-width:700px){.sub{padding-left:1rem}}
+
+.oneline{font-size:1.22rem;max-width:var(--measure);margin-bottom:.8rem}
+.like{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--ink-2);border-left:3px solid var(--line);padding:.2rem 0 .2rem 1rem;max-width:var(--measure);margin:0 0 1.4rem}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.2rem 0 1.4rem}
+.cols.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:820px){.cols,.cols.two{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.box h4{margin:0 0 .4rem;font-size:1.08rem}
+.box ul{margin:0;padding-left:1.1rem;font-size:1rem}
+.box.good{border-top:4px solid var(--good)}.box.bad{border-top:4px solid var(--risky)}.box.cost{border-top:4px solid var(--maybe)}
+.bottom{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;padding:1rem 1.2rem;margin:1.6rem 0 0;max-width:var(--measure)}
+.bottom p{margin:0}
+.bottom b{font-family:var(--serif)}
+.note{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--maybe);border-radius:10px;padding:1rem 1.2rem;margin:1.4rem 0;max-width:var(--measure)}
+.note h4{margin-top:0}
+.note p:last-child{margin-bottom:0}
+
+/* overview table */
+.overview{margin:2.4rem 0 0}
+.overview h2{font-size:1.7rem;margin-bottom:.4rem}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:1rem}
+th,td{text-align:left;vertical-align:top;padding:.75rem 1rem;border-bottom:1px solid var(--line)}
+thead th{font-family:var(--serif);font-weight:600;font-size:1.02rem;background:var(--accent-soft)}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+.ov td:first-child{font-family:var(--serif);font-weight:700;color:var(--accent);width:3rem;font-size:1.1rem}
+.ov td a{font-weight:600}
+.ov tr.subrow td:nth-child(2){padding-left:1.8rem}
+@media (max-width:760px){
+  .ov table,.ov tbody,.ov tr,.ov td{display:block;width:auto}
+  .ov thead{display:none}
+  .ov tr{padding:.7rem 1rem;border-bottom:1px solid var(--line)}
+  .ov td{border:0;padding:.15rem 0}
+  .ov tr.subrow td:nth-child(2){padding-left:0}
+  .ov td:first-child{width:auto}
+  .ov td[data-label]::before{content:attr(data-label) ": ";font-weight:600;color:var(--ink)}
+}
+.cmp th[scope=row]{font-weight:600;color:var(--ink-2);width:9rem}
+@media (max-width:700px){
+  .cmp table,.cmp tbody,.cmp tr,.cmp th,.cmp td{display:block;width:auto}
+  .cmp thead{display:none}
+  .cmp tr{border-bottom:1px solid var(--line);padding:.5rem 0}
+  .cmp tbody th{border:0;padding:.4rem 1rem 0;color:var(--ink);font-family:var(--serif)}
+  .cmp td{border:0;padding:.3rem 1rem}
+  .cmp td::before{content:attr(data-label) ": ";font-weight:600;color:var(--ink)}
+}
+
+/* cut cards */
+.cutgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.4rem 0}
+.cutcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem 1.1rem;margin:0}
+.cutcard h4{margin:.4rem 0 .3rem;font-size:1.2rem}
+.cutcard p{margin:0 0 .3rem;font-size:1rem}
+.cutcard .effect{color:var(--risky)}
+@media (max-width:760px){.cutgrid{grid-template-columns:1fr}}
+
+/* collapsibles */
+details.more{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:1.4rem 0 0}
+details.more>summary{cursor:pointer;list-style:none;padding:.95rem 1.2rem;font-weight:600;display:flex;align-items:center;gap:.7rem;color:var(--ink)}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"";width:.55rem;height:.55rem;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg);transition:transform .15s;flex:none;margin-left:.1rem}
+details.more[open]>summary::before{transform:rotate(45deg)}
+details.more>summary .hint{font-weight:400;color:var(--ink-3);font-size:.95rem;margin-left:auto}
+details.more>.mb{padding:.2rem 1.2rem 1.3rem;border-top:1px solid var(--line)}
+details.more>.mb>h4:first-child{margin-top:1rem}
+details.more details.more{background:var(--paper)}
+@media (max-width:640px){details.more>summary .hint{display:none}}
+
+/* examples */
+.examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem;margin:1rem 0 .4rem}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;margin:0}
+.ex .ph{display:block;position:relative;aspect-ratio:1/1;overflow:hidden;background:#10131B}
+.ex .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.ex .ph.none{display:grid;aspect-ratio:auto;min-height:10rem;place-items:center;color:#C9CEDC;text-decoration:none;font-weight:600;padding:1rem;text-align:center}
+.ex figcaption{padding:.75rem .95rem .95rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.ex .by{font-weight:600;font-size:1rem;margin:0}
+.ex .why{font-size:.95rem;color:var(--ink-2);margin:0;line-height:1.5}
+.ex .lk{font-size:.92rem;margin-top:auto;padding-top:.3rem}
+.badge{align-self:flex-start;font-size:.78rem;font-weight:700;padding:.12rem .55rem;border-radius:999px}
+.badge.int{background:var(--good-soft);color:var(--good)}
+.badge.ext{background:var(--risky-soft);color:var(--risky)}
+.badge.dis{background:var(--maybe-soft);color:var(--maybe)}
+.exlabel{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:1.6rem 0 .2rem}
+
+/* figures */
+.figs{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 1.2rem;align-items:start}
+.figs.two{grid-template-columns:repeat(auto-fill,minmax(20rem,1fr))}
+.pfig{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.7rem;margin:0}
+.pfig img{border-radius:6px;background:#fff;width:100%;max-height:28rem;object-fit:contain}
+.pfig figcaption{font-size:.9rem;color:var(--ink-2);margin-top:.55rem;line-height:1.5}
+
+/* facts / quotes */
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.9rem;margin:.8rem 0 1.2rem}
+.fact{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem}
+.fact h5{font-family:var(--serif);font-size:1.02rem;margin:0 0 .35rem;font-weight:600}
+.fact ul{margin:0;padding-left:1.05rem;font-size:.97rem}
+.quotes{margin:.6rem 0 1rem;padding:0;list-style:none}
+.quotes li{border-left:3px solid var(--line);padding:.1rem 0 .1rem 1rem;margin:.8rem 0;max-width:var(--measure)}
+.quotes q{font-family:var(--serif);font-style:italic}
+.quotes span{display:block;font-size:.88rem;color:var(--ink-3);margin-top:.2rem}
+.refs{font-size:.95rem;padding-left:1.2rem}
+.refs li{margin:.45rem 0}
+
+/* toggle + slider */
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;padding:.2rem;background:var(--paper);margin-bottom:.6rem}
+.toggle button{font:inherit;font-size:.97rem;border:0;background:transparent;color:var(--ink-2);padding:.4rem .9rem;border-radius:6px;cursor:pointer;font-weight:500}
+.toggle button[aria-pressed="true"]{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .toggle button[aria-pressed="true"]{color:#12161F}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .toggle button[aria-pressed="true"]{color:#12161F}}
+.graftgrid{display:grid;grid-template-columns:1fr 1.25fr;gap:1.5rem;align-items:center}
+@media (max-width:760px){.graftgrid{grid-template-columns:1fr}}
+.rotlab{display:grid;grid-template-columns:1.2fr 1fr;gap:1.5rem;align-items:center}
+@media (max-width:760px){.rotlab{grid-template-columns:1fr}}
+.rotlab svg{max-height:340px}
+.rotlab input[type=range]{width:100%;accent-color:var(--accent);margin:.6rem 0}
+.readout{font-size:1.1rem;line-height:1.5;margin:0}
+.metaphor{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0 .4rem}
+.mcard{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:0}
+.mcard h4{margin:0 0 .2rem}
+.mcard p{margin:0;font-size:1rem;color:var(--ink-2)}
+@media (max-width:760px){.metaphor{grid-template-columns:1fr}}
+.narrow{max-width:var(--measure)}
+.narrow svg{max-width:26rem;margin:0 auto}
+
+/* quiz */
+.quiz fieldset{border:0;margin:0 0 1rem;padding:0}
+.quiz legend{font-weight:600;margin-bottom:.45rem}
+.choices{display:flex;flex-wrap:wrap;gap:.45rem}
+.choices label{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--line);border-radius:8px;padding:.32rem .8rem;cursor:pointer;font-size:1rem;background:var(--paper)}
+.choices input{accent-color:var(--accent)}
+.choices label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.quiz-out{border-top:1px solid var(--line);padding-top:.9rem}
+
+/* checklist */
+.checklist{counter-reset:q;list-style:none;padding:0;max-width:var(--measure)}
+.checklist li{counter-increment:q;position:relative;padding-left:2.6rem;margin:1rem 0}
+.checklist li::before{content:counter(q);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-family:var(--serif);font-weight:700;display:grid;place-items:center;font-size:.95rem}
+
+/* references */
+.lib{list-style:none;padding:0;margin:.6rem 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:.6rem}
+.lib li{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.7rem .9rem}
+.lib a{font-weight:600;text-decoration:none}
+.lib a:hover{text-decoration:underline}
+.lib p{margin:.25rem 0 0;font-size:.92rem;color:var(--ink-2);line-height:1.45}
+.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.3rem 2rem;margin:.4rem 0}
+.gloss dt{font-family:var(--serif);font-weight:600;font-size:1.05rem;margin-top:.8rem}
+.gloss dd{margin:.1rem 0 0;color:var(--ink-2);font-size:.98rem}
+footer.site{border-top:1px solid var(--line);padding:2.4rem 0 4rem;font-size:.95rem;color:var(--ink-2)}
+</style>
+</head>
+<body>
+<a class="skip" href="#start">Skip to the guide</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="nose-base" viewBox="0 0 520 360">
+      <path d="M52 306 Q260 278 468 306 Q470 334 446 352 Q260 368 74 352 Q50 334 52 306 Z" fill="var(--skin-lip)" fill-opacity=".75"/>
+      <path d="M260 64 C338 64 398 116 412 184 C424 242 410 288 376 298 C350 306 328 292 310 287 L280 291 C272 302 248 302 240 291 L210 287 C192 292 170 306 144 298 C110 288 96 242 108 184 C122 116 182 64 260 64 Z" fill="var(--skin)" stroke="var(--skin-2)" stroke-width="3"/>
+      <ellipse cx="260" cy="122" rx="62" ry="34" fill="#fff" fill-opacity=".12"/>
+      <ellipse cx="207" cy="228" rx="31" ry="54" transform="rotate(26 207 228)" fill="var(--nostril)"/>
+      <ellipse cx="313" cy="228" rx="31" ry="54" transform="rotate(-26 313 228)" fill="var(--nostril)"/>
+      <path d="M150 140 C126 180 124 236 140 276" fill="none" stroke="var(--skin-2)" stroke-width="2" stroke-opacity=".55" stroke-linecap="round"/>
+      <path d="M370 140 C394 180 396 236 380 276" fill="none" stroke="var(--skin-2)" stroke-width="2" stroke-opacity=".55" stroke-linecap="round"/>
+    </symbol>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--ink)"/></marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--blood)"/></marker>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Alarplasty Repair Guide, back to top"><svg viewBox="0 0 520 360" aria-hidden="true"><use href="#nose-base"/></svg><span>Alarplasty Repair Guide</span></a>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#start">Start here</a>
+      <a href="#m1"><b>1</b>Derotation</a>
+      <a href="#m2"><b>2</b>Composite grafts</a>
+      <a href="#m3"><b>3</b>Flaps</a>
+      <a href="#m4"><b>4</b>Other options</a>
+      <a href="#ask">Questions</a>
+      <a href="#refs">Sources</a>
+    </nav>
+    <button class="themebtn" id="themebtn" type="button" aria-label="Switch light or dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO + OVERVIEW -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>Repairing an over-done alarplasty</h1>
+        <p class="lede">An alarplasty cuts skin from the nostrils to make them smaller. That skin doesn't grow back. This guide explains, in plain words, the repair options our patient group found, what each one can and can't do, and what the research says.</p>
+        <p class="meta">Made by patients, for patients. Based on 8,078 messages in our research group chat (March to October 2026) and published studies. Member names removed. Not medical advice.</p>
+      </div>
+      <figure class="panel">
+        <svg class="sketch" viewBox="0 0 520 404" role="img" aria-labelledby="hero-t hero-d">
+          <title id="hero-t">A nose seen from below</title>
+          <desc id="hero-d">A nose from underneath, showing the tip, the columella between the nostrils, the nostril wings, and the two places an alarplasty usually cuts: the wedge on the outside of the wing and the sill at the bottom of the nostril.</desc>
+          <use href="#nose-base" width="520" height="360"/>
+          <path class="cut" d="M116 250 C108 272 118 293 146 299 C158 290 162 272 151 254 C140 247 126 246 116 250 Z"/>
+          <path class="cut" d="M322 280 C330 293 350 297 362 289 C358 280 349 273 337 273 Z"/>
+          <path class="lead" d="M260 40 C260 60 260 76 260 92"/><text x="230" y="32" font-size="22">the tip</text>
+          <path class="lead" d="M70 150 C96 160 110 170 122 184"/><text x="10" y="140" font-size="22">wing (ala)</text>
+          <path class="lead" d="M260 374 C260 340 260 300 260 262"/><text x="212" y="396" font-size="22">columella</text>
+          <path class="lead" d="M450 160 C430 170 420 180 412 196"/><text x="418" y="150" font-size="22">crease</text>
+          <path class="lead" d="M58 374 C78 346 98 318 118 288"/><text class="cutlabel" x="6" y="396" font-size="22">wedge cut</text>
+          <path class="lead" d="M460 374 C440 340 396 312 364 292"/><text class="cutlabel" x="424" y="396" font-size="22">sill cut</text>
+        </svg>
+        <figcaption>Looking up at a nose. The red dashed areas are where an alarplasty usually cuts. Some surgeons cut one, some cut both.</figcaption>
+      </figure>
+    </div>
+
+    <div class="overview" id="overview">
+      <h2>The options at a glance</h2>
+      <p class="muted read" style="margin:0">Four kinds of repair came up again and again. Click a name to jump to it.</p>
+      <div class="tablewrap ov">
+        <table>
+          <thead><tr><th scope="col">#</th><th scope="col">Method</th><th scope="col">What it can do</th><th scope="col">Scar risk</th><th scope="col">How proven</th><th scope="col">Our take</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><a href="#m1">Derotation</a></td><td data-label="What it can do">Hides uneven nostrils if your tip was turned up. Adds no tissue.</td><td data-label="Scar risk">Low</td><td data-label="How proven">Thin</td><td data-label="Our take"><span class="pill v-maybe">Helper, not a fix</span></td></tr>
+            <tr><td>2</td><td><a href="#m2">Composite grafts</a> <span class="muted small">(ear skin + cartilage)</span></td><td colspan="4" class="muted small" data-label="Note">Two very different ways to place them:</td></tr>
+            <tr class="subrow"><td>2a</td><td><a href="#m2a">Internal</a></td><td data-label="What it can do">Adds a little size and flare from inside the nostril.</td><td data-label="Scar risk">Medium</td><td data-label="How proven">Good</td><td data-label="Our take"><span class="pill v-good">The middle ground</span></td></tr>
+            <tr class="subrow"><td>2b</td><td><a href="#m2b">External</a></td><td data-label="What it can do">Rebuilds the cut wedge or sill directly.</td><td data-label="Scar risk">High</td><td data-label="How proven">Strong</td><td data-label="Our take"><span class="pill v-risky">Works, but shows</span></td></tr>
+            <tr><td>3</td><td><a href="#m3">Flaps</a></td><td colspan="4" class="muted small" data-label="Note">Skin moved while still attached to its blood supply:</td></tr>
+            <tr class="subrow"><td>3a</td><td><a href="#m3a">Alar lobule flap</a></td><td data-label="What it can do">Fixes notches and teardrop shapes. Doesn't add size.</td><td data-label="Scar risk">Low</td><td data-label="How proven">One small study</td><td data-label="Our take"><span class="pill v-good">Gentlest option</span></td></tr>
+            <tr class="subrow"><td>3b</td><td><a href="#m3b">Lip or cheek island flap</a></td><td data-label="What it can do">Brings in new living skin, so in theory the most size.</td><td data-label="Scar risk">High</td><td data-label="How proven">Very thin</td><td data-label="Our take"><span class="pill v-risky">Promising, unproven</span></td></tr>
+            <tr><td>4</td><td><a href="#m4">Other options</a></td><td data-label="What it can do">V-to-Y advancement, fixing weak cartilage, scar release and scar care.</td><td data-label="Scar risk">Varies</td><td data-label="How proven">Varies</td><td data-label="Our take"><span class="pill">Supporting fixes</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small read">"Our take" is our group's best judgement from everything below, not a doctor's rating.</p>
+
+      <details class="more">
+        <summary>Not sure where to start? Answer three questions <span class="hint">Nothing is saved</span></summary>
+        <div class="mb">
+          <form class="quiz" id="quiz">
+            <fieldset><legend>Where were you cut?</legend><div class="choices">
+              <label><input type="radio" name="cut" value="sill"> Sill only</label>
+              <label><input type="radio" name="cut" value="wedge"> Wedge on the side</label>
+              <label><input type="radio" name="cut" value="both"> Both</label>
+              <label><input type="radio" name="cut" value="unsure"> Not sure</label></div></fieldset>
+            <fieldset><legend>Is your nose tip turned up more than it used to be?</legend><div class="choices">
+              <label><input type="radio" name="tip" value="up"> Yes</label>
+              <label><input type="radio" name="tip" value="no"> No</label></div></fieldset>
+            <fieldset><legend>What bothers you most?</legend><div class="choices">
+              <label><input type="radio" name="want" value="shape"> The shape or notches</label>
+              <label><input type="radio" name="want" value="size"> The size</label>
+              <label><input type="radio" name="want" value="flare"> The lost flare</label></div></fieldset>
+            <div class="quiz-out" id="quiz-out" aria-live="polite"><p class="muted" style="margin:0">Pick your answers to see which sections to read first.</p></div>
+          </form>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- START HERE -->
+<section class="sec band" id="start" aria-labelledby="h-start">
+  <div class="wrap">
+    <p class="eyebrow">Before you start</p>
+    <h2 id="h-start">What did the alarplasty take?</h2>
+    <p class="sum">The right repair depends on what's missing. Two different cuts cause two different problems.</p>
+    <div class="cutgrid">
+      <figure class="cutcard">
+        <svg class="sketch" viewBox="0 40 520 330" role="img" aria-label="Nose from below with the sills marked"><use href="#nose-base" width="520" height="360"/><path class="cut" d="M322 280 C330 293 350 297 362 289 C358 280 349 273 337 273 Z"/><path class="cut" d="M198 280 C190 293 170 297 158 289 C162 280 171 273 183 273 Z"/></svg>
+        <figcaption><h4>Sill cut</h4><p>Skin taken from the floor of each nostril.</p><p class="effect">Nostrils get smaller. Notches or "teardrop" shapes can form.</p></figcaption>
+      </figure>
+      <figure class="cutcard">
+        <svg class="sketch" viewBox="0 40 520 330" role="img" aria-label="Nose from below with a wedge on each wing marked"><use href="#nose-base" width="520" height="360"/><path class="cut" d="M116 250 C108 272 118 293 146 299 C158 290 162 272 151 254 C140 247 126 246 116 250 Z"/><path class="cut" d="M404 250 C412 272 402 293 374 299 C362 290 358 272 369 254 C380 247 394 246 404 250 Z"/></svg>
+        <figcaption><h4>Wedge cut</h4><p>A slice taken from the outside of each wing.</p><p class="effect">Wings get pulled in. You lose flare.</p></figcaption>
+      </figure>
+      <figure class="cutcard">
+        <svg class="sketch" viewBox="0 40 520 330" role="img" aria-label="Nose from below with both sills and wedges marked"><use href="#nose-base" width="520" height="360"/><path class="cut" d="M116 250 C108 272 118 293 146 299 C158 290 162 272 151 254 C140 247 126 246 116 250 Z"/><path class="cut" d="M404 250 C412 272 402 293 374 299 C362 290 358 272 369 254 C380 247 394 246 404 250 Z"/><path class="cut" d="M322 280 C330 293 350 297 362 289 C358 280 349 273 337 273 Z"/><path class="cut" d="M198 280 C190 293 170 297 158 289 C162 280 171 273 183 273 Z"/></svg>
+        <figcaption><h4>Both (a "Weir")</h4><p>Sill and wedge together. Common in our group.</p><p class="effect">Smaller nostrils, notches and lost flare.</p></figcaption>
+      </figure>
+    </div>
+    <div class="read">
+      <p>Each method below helps with some of these and not others:</p>
+      <ul>
+        <li><strong>Shape:</strong> a round nostril instead of a notch, a teardrop or a flat, pinched wing.</li>
+        <li><strong>Size:</strong> a bigger opening. This needs <em>new</em> tissue, because the old tissue is gone.</li>
+        <li><strong>Flare:</strong> wings that curve outward. The wedge cut is what usually takes this.</li>
+      </ul>
+    </div>
+    <details class="more read">
+      <summary>More on this <span class="hint">Notch types, reports, an example</span></summary>
+      <div class="mb">
+        <h4>Not every notch is the same notch</h4>
+        <ol>
+          <li><strong>Weak cartilage.</strong> The wing caves in because its support was trimmed. Usually fixable with cartilage grafts.</li>
+          <li><strong>A rim that's pulled up (retraction).</strong> Often fixable with grafts placed inside the nose.</li>
+          <li><strong>Skin cut away by alarplasty.</strong> The shortage is on the outside, and there's no easy fix. This is most of us.</li>
+        </ol>
+        <h4>Find out what was actually done</h4>
+        <p>Many of us got reports that left out or understated the alarplasty. One member's revision surgeons measured about 5 mm taken from each side, where his original surgeon claimed 2 mm. Get an independent surgeon to examine you and write down the measurements first.</p>
+        <h4>Not every alarplasty looks like ours</h4>
+        <div class="examples" style="max-width:17rem">
+          EX:DRKpan3DK2B
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- 1 DEROTATION -->
+<section class="sec" id="m1" aria-labelledby="h-m1">
+  <div class="wrap">
+    <div class="mhead"><span class="mnum">1</span><div><h2 id="h-m1">Derotation</h2>
+      <div class="pills"><span class="pill v-maybe">A helper, not a fix</span><span class="pill">Only if your tip was turned up</span><span class="pill">Keeps your current tissue</span></div></div></div>
+    <div class="indent">
+      <p class="oneline">Tip the point of the nose down a little, so less of the inside of the nostrils shows.</p>
+      <p class="like">Think of a mug. Tilt it up and you see right inside. Tilt it down and you don't. Derotation tilts the nose down so the uneven nostrils hide.</p>
+
+      <figure class="panel">
+        <div class="rotlab">
+          <svg class="sketch" id="rotsvg" viewBox="120 40 330 280" role="img" aria-labelledby="rot-t">
+            <title id="rot-t">Side view of a nose. The slider turns the tip up or down, and more of the nostril shows when it turns up.</title>
+            <path id="face" fill="var(--skin)" stroke="var(--skin-2)" stroke-width="3" d=""/>
+            <g id="lower">
+              <path d="M246 186 C268 182 284 196 280 210 C272 222 252 220 244 212" fill="none" stroke="var(--skin-2)" stroke-width="2.4" stroke-linecap="round"/>
+              <ellipse id="nostril" cx="262" cy="216" rx="15" ry="4" fill="var(--nostril)"/>
+            </g>
+            <path class="lead" d="M372 120 C352 140 330 160 312 182"/>
+            <text x="330" y="108" font-size="19">nose tip</text>
+            <text id="angleText" x="300" y="292" font-size="19">angle ≈ 110°</text>
+          </svg>
+          <div>
+            <label for="rot" class="readout"><strong>Try it.</strong> Slide the tip down.</label>
+            <input id="rot" type="range" min="-8" max="20" step="1" value="15">
+            <p class="readout" id="rot-out" aria-live="polite">Nostril show: a lot. This is an over-rotated, "upturned" tip.</p>
+            <p class="muted small" style="margin-top:.6rem">The nostril never gets bigger. Derotation changes what people see. It doesn't put skin back.</p>
+          </div>
+        </div>
+      </figure>
+
+      <div class="cols">
+        <div class="box good"><h4>Can help if</h4><ul><li>Your tip got turned up in surgery</li><li>Your alarplasty was mild to moderate</li><li>Your nostrils look better when you push the tip down</li></ul></div>
+        <div class="box bad"><h4>Won't help if</h4><ul><li>A lot of skin was cut</li><li>Your tip wasn't turned up</li><li>Your wing was stitched too low compared to the columella</li></ul></div>
+        <div class="box cost"><h4>Trade-offs</h4><ul><li>Usually needs a strong support graft (an SEG, often rib), which can feel stiff</li><li>Overdone, it can look older or droopy</li><li>It's another full nose surgery</li></ul></div>
+      </div>
+
+      <p class="exlabel">Key examples</p>
+      <div class="examples">
+        EX:CtxKAyvsVrC
+        EX:DNlENwgRSK6
+      </div>
+
+      <div class="bottom"><p><b>Bottom line.</b> Only worth it if your tip was turned up. It makes what you have left look its best, often in the same surgery as other repairs. It won't bring back what was cut.</p></div>
+
+      <details class="more">
+        <summary>More detail <span class="hint">Why it might work, member experiences, sources</span></summary>
+        <div class="mb">
+          <h4>Why it might help</h4>
+          <p>Alarplasty damage is easiest to see when a lot of the nostril shows. Many of us also had our tips turned up in the same surgery, which puts the notches and uneven sides on display. Surgeons do treat nostril show as a real, fixable problem and even classify how the rims sit (Rohrich and Afrooz, 2019). But nobody has published derotation as an alarplasty repair. The idea came from us comparing hundreds of photos.</p>
+          <h4>The mirror test</h4>
+          <p>In a mirror, gently push your nose tip down using your upper lip and cheek muscles. If the wings flare out more, rotation is probably part of your problem. If nothing changes, you're most likely missing skin. It's a rough clue, not a diagnosis.</p>
+          <h4>What members found</h4>
+          <ul class="quotes">
+            <li><q>If there is more rotation, there is more nostril show. So you see the alarplasty deformity more easily.</q><span>The member who started the derotation idea</span></li>
+            <li><q>Nostril flare can be currently improved with downrotation. Flaps and skin grafts do not help for flare.</q><span>A member with eight surgeries, who was against derotation at first</span></li>
+            <li><q>With severe alar issues, simple derotation will not fix the issue.</q><span>The same member, months earlier, about her own case. Derotation pulled her nostrils further up, not out.</span></li>
+          </ul>
+          <p>One member's nostrils looked wider after his revision even though their size didn't change: his surgeon made the tip stick out less and propped up the collapsed wings. Later, a surgeon told the same member his real issue was how the rim had been stitched, not rotation, and a US surgeon turned him down, saying his skin might not allow the derotation he wanted. Get examined before betting on this.</p>
+          <p>US surgeons named most often for strong derotation: Dr. Sam Most and Dr. Ari Hyman. Dr. Scott Owen and Dr. Steitz also came up.</p>
+          <div class="figs">
+            <figure class="pfig"><img src="IMG:sketch" alt="A hand drawn sketch: from the side, the tip angle goes from about 106 degrees to 90; from the front, the nostrils go from pinched to wider" loading="lazy"><figcaption>A member's own sketch of what he hoped derotation would change: tip angle from about 106° to 90°, nostrils wider instead of pinched.</figcaption></figure>
+          </div>
+          <h4>More examples</h4>
+          <div class="examples">EX:CvzpOS9LfUA</div>
+          <h4>Sources</h4>
+          <ul class="refs"><li>Rohrich RJ, Afrooz PN. Revisiting the Alar-Columellar Relationship: Classification and Correction. <em>Plast Reconstr Surg</em> 2019;144(2):340–346. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Revisiting+the+Alar-Columellar+Relationship+Classification+and+Correction" target="_blank" rel="noopener">PubMed</a></li></ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 2 COMPOSITE GRAFTS -->
+<section class="sec band" id="m2" aria-labelledby="h-m2">
+  <div class="wrap">
+    <div class="mhead"><span class="mnum">2</span><div><h2 id="h-m2">Composite grafts</h2>
+      <div class="pills"><span class="pill">Skin + cartilage from the ear</span><span class="pill">The most studied option</span></div></div></div>
+    <div class="indent">
+      <p class="oneline">Take a small piece of your ear that has <strong>two layers, skin and the cartilage under it</strong>, and stitch it into the nose to replace what was cut.</p>
+      <div class="note" style="border-left-color:var(--accent)">
+        <h4>Composite graft vs. cartilage graft</h4>
+        <p>"Ear graft" can mean two different things. A <strong>cartilage graft</strong> is cartilage only: it can prop up or reshape a wing, but it adds no skin, so it can't undo an alarplasty on its own. A <strong>composite graft</strong> is skin <em>plus</em> cartilage (sometimes skin and fat). It's the only kind of graft that puts skin back. This section is about composite grafts.</p>
+      </div>
+      <p class="like">A graft is like a cut flower in a vase. It has no roots, so it has to grow new blood vessels in its new spot. Small ones usually make it. Big ones sometimes don't.</p>
+
+      <figure class="panel" id="graftfig">
+        <div class="toggle" role="group" aria-label="Show graft placement">
+          <button type="button" data-mode="internal" aria-pressed="true">2a. Internal</button>
+          <button type="button" data-mode="external" aria-pressed="false">2b. External</button>
+        </div>
+        <div class="graftgrid">
+          <svg class="sketch" viewBox="0 0 430 340" role="img" aria-labelledby="ear-t">
+            <title id="ear-t">A small piece of skin and cartilage taken from the ear, made of three layers: skin, cartilage, skin.</title>
+            <path d="M120 20 C50 20 20 80 30 140 C38 188 70 206 78 240 C84 272 104 300 140 292 C170 286 176 256 170 232 C186 210 206 170 204 120 C202 60 170 20 120 20 Z" fill="var(--skin)" stroke="var(--skin-2)" stroke-width="3"/>
+            <path d="M120 54 C80 54 64 96 72 134 C80 170 110 170 120 200" fill="none" stroke="var(--skin-2)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M112 110 C126 102 146 108 150 124 C154 142 140 156 124 154 C110 152 102 138 104 126 Z" fill="var(--earskin)" stroke="var(--blood)" stroke-width="2.5" stroke-dasharray="5 4"/>
+            <text x="22" y="332" font-size="23">from the ear</text>
+            <path class="lead" d="M158 128 C190 120 210 112 236 104"/>
+            <g transform="translate(240 80)">
+              <rect x="0" y="0" width="84" height="18" rx="6" fill="var(--earskin)" stroke="var(--skin-2)"/>
+              <rect x="0" y="18" width="84" height="18" fill="var(--cartilage)" stroke="#8FA9C4"/>
+              <rect x="0" y="36" width="84" height="18" rx="6" fill="var(--earskin)" stroke="var(--skin-2)"/>
+              <text x="92" y="15" font-size="18">skin</text><text x="92" y="34" font-size="18">cartilage</text><text x="92" y="53" font-size="18">skin</text>
+              <text x="-4" y="98" font-size="22">a composite</text><text x="-4" y="124" font-size="22">graft</text>
+            </g>
+          </svg>
+          <svg class="sketch" viewBox="0 30 520 340" role="img" aria-labelledby="gn-t">
+            <title id="gn-t">Nose from below showing where the composite graft goes</title>
+            <use href="#nose-base" width="520" height="360"/>
+            <g id="g-int">
+              <path d="M178 202 C166 224 168 256 184 276 C192 262 190 228 186 206 Z" fill="var(--earskin)" stroke="var(--blood)" stroke-width="3"/>
+              <path d="M136 226 L82 220" stroke="var(--ink)" stroke-width="3.5" marker-end="url(#arrow)"/>
+              <path d="M140 262 L86 262" stroke="var(--ink)" stroke-width="3.5" marker-end="url(#arrow)"/>
+            </g>
+            <g id="g-ext" style="display:none">
+              <path d="M116 250 C108 272 118 293 146 299 C158 290 162 272 151 254 C140 247 126 246 116 250 Z" fill="var(--earskin)" stroke="var(--blood)" stroke-width="3" stroke-dasharray="5 4"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption id="graft-cap">Internal: the graft is tucked into the lining inside the nostril and pushes the wing outward (arrows). Hidden from the front, but the gain is modest.</figcaption>
+      </figure>
+
+      <div class="tablewrap cmp">
+        <table>
+          <thead><tr><th scope="col"></th><th scope="col">2a. Internal</th><th scope="col">2b. External</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Where it goes</th><td data-label="Internal">Inside the nostril. The wing is freed and the graft is tucked into the lining.</td><td data-label="External">On the outside of the wing, filling the wedge or sill that was cut.</td></tr>
+            <tr><th scope="row">What it can do</th><td data-label="Internal">Modest extra size and a little flare.</td><td data-label="External">The most direct way to rebuild the shape that was cut.</td></tr>
+            <tr><th scope="row">Scar you'd see</th><td data-label="Internal">Only if someone looks up your nose.</td><td data-label="External">On the outside, around the patch.</td></tr>
+            <tr><th scope="row">Main risk</th><td data-label="Internal">Shrinking back over time.</td><td data-label="External">Color mismatch, shrinking, not taking.</td></tr>
+            <tr><th scope="row">Can it be undone?</th><td data-label="Internal">Easier to remove.</td><td data-label="External">Hard. Removing it means more scars.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2a -->
+      <div class="sub" id="m2a">
+        <div class="shead"><span class="snum">2a</span><h3>Internal composite grafts</h3><span class="pill v-good">The middle ground</span></div>
+        <p class="read">The wing is released from the inside, scar tissue is freed, and the composite graft is slipped into the nostril lining so the wing can sit further out. It doesn't rebuild the outside of the wedge, but it adds some size and flare without an outside scar. This is where most of our group landed.</p>
+        <p class="read muted">Surgeons reported as doing it internally: Dr. Oguzhan Oguz, Dr. Shahriar Nazari (Iran), Dr. Blas García (Spain), Dr. Kidakorn Kiranantawat (Thailand), Dr. Ahmet Halit Aydın, and reportedly Dr. Khosh (US). Dr. Göde says he now only does them internally.</p>
+        <div class="figs two">
+          <figure class="pfig"><img src="IMG:fmed1" alt="Diagram: a crescent marked on the ear, the spot on the nostril rim, and the graft fitted into the rim from inside the nostril" loading="lazy"><figcaption><strong>How an internal composite graft goes in:</strong> (A) marked on the ear, (B) the spot on the nostril rim, (C) fitted in from inside the nostril. Front Med 2026, Fig. 1. CC BY 4.0.</figcaption></figure>
+        </div>
+        <p class="exlabel">Key examples</p>
+        <div class="examples">
+          EX:CfKFXSSM_ij
+          EX:DA_U7hhzFpO
+          EX:C9T-1AKikBg
+        </div>
+        <details class="more">
+          <summary>More internal examples <span class="hint">3 more</span></summary>
+          <div class="mb"><div class="examples">
+            EX:C7AHUWHr0EC
+            EX:nazari1
+            EX:C2PcmLwCJjr
+          </div></div>
+        </details>
+      </div>
+
+      <!-- 2b -->
+      <div class="sub" id="m2b">
+        <div class="shead"><span class="snum">2b</span><h3>External composite grafts</h3><span class="pill v-risky">Works, but shows</span></div>
+        <p class="read">The composite graft is sewn into the outside of the wing, right where the wedge or sill was cut. It's the most direct way to rebuild the original shape, and it has decades of studies behind it. The catch is the outside scar, and ear skin doesn't always match nose skin, especially on darker skin.</p>
+        <p class="read muted">Surgeons reported as doing it externally: Dr. Jason Roostaeian (US), Dr. Amir Sazgar (Iran), Dr. Shingyochi (Japan), Dr. Erkan Soylu, Dr. Fatullayev, and Dr. Ali Manafi (in his published study).</p>
+        <div class="figs two">
+          <figure class="pfig"><img src="IMG:manafi1" alt="Photos from Manafi 2013: a wedge of skin taken where the earlobe meets the rim of the ear, then sewn into cuts in both nostril rims" loading="lazy"><figcaption><strong>An external graft being taken and sewn in:</strong> harvested where the earlobe meets the ear rim (a to d), then stitched into the nostril rims (e). Manafi et al. 2013, Fig. 1. CC BY 3.0.</figcaption></figure>
+        </div>
+        <p class="exlabel">Key examples</p>
+        <div class="examples">
+          EX:C4aw7VvLpcT
+          EX:DdjfmFaiHD1
+        </div>
+        <details class="more">
+          <summary>More external examples <span class="hint">1 more</span></summary>
+          <div class="mb"><div class="examples">EX:DUmywnTE25f</div></div>
+        </details>
+      </div>
+
+      <div class="note">
+        <h4>Skin tone matters</h4>
+        <p>Ear skin can heal lighter or darker than the skin around it, and scars hold less pigment. On darker skin that's easier to see. Members saw external composites heal badly on Black and East Asian patients, and Dr. Toriumi told a Black member: "if you were Caucasian, I would consider, but as a black person, I wouldn't recommend it." The studies are mixed, and there's almost no data for the darkest skin types. If you have darker skin, ask to see healed results on people with your skin tone, and lean towards internal.</p>
+      </div>
+
+      <div class="bottom"><p><b>Bottom line.</b> If you want more size and can live with modest gains, an internal composite graft is the middle ground. External grafts rebuild the most, but the patch can show. Either way, grafts can shrink back over time.</p></div>
+
+      <details class="more">
+        <summary>More detail <span class="hint">What surgeons said, research, figures, sources</span></summary>
+        <div class="mb">
+          <h4>What surgeons told members</h4>
+          <ul>
+            <li><strong>Dr. Oguzhan Oguz</strong> (Istanbul, August 2026) told a member he'd only do internal grafts, never external, and advised against external flaps too. Another member said he suggested external for her, so ask directly.</li>
+            <li><strong>Dr. Sercan Göde</strong> said he used to do many composite grafts but now prefers flaps, because grafts must grow a new blood supply and can shrink.</li>
+            <li><strong>Dr. Erkan Soylu</strong> turned down one member because he only does it when the nostrils are very small. Someone in another patient group widened successfully with him.</li>
+            <li><strong>Dr. Ziad Katrib</strong> uses internal grafts for pulled-up rims but turned down alarplasty repair.</li>
+          </ul>
+          <h4>What the research says</h4>
+          <p>Composite grafts have the most evidence of anything here, though most studies are about injuries, burns and cancer rather than cosmetic alarplasty.</p>
+          <div class="facts">
+            <div class="fact"><h5>Manafi et al., 2013 (Iran)</h5><ul><li>56 patients, mostly after too much alar base was cut</li><li>Small grafts (skin and fat): 47 of 47 took</li><li>Bigger grafts with cartilage: 5 of 9 excellent, 3 acceptable, 1 failed</li><li>Not advised over 2 cm. Use flaps instead</li></ul></div>
+            <div class="fact"><h5>Toriumi et al., 2023 (US)</h5><ul><li>367 grafts in 234 rhinoplasties</li><li>93.7% took fully, 6.3% partly or fully failed</li></ul></div>
+            <div class="fact"><h5>Sazgar et al., 2025 (Iran)</h5><ul><li>45 people with over-cut nostril floor and wing junctions</li><li>No graft failures, even after past skin death</li><li>Breathing and appearance scores improved a lot</li></ul></div>
+            <div class="fact"><h5>Asian patients, 2026</h5><ul><li>15 patients, grafts placed from inside the nostril</li><li>Mild shrinking and color mismatch at 3 to 6 months</li><li>Scars "almost indistinguishable" at 1 year; 87% satisfied</li></ul></div>
+            <div class="fact"><h5>Ahuja et al., 2014 (India)</h5><ul><li>19 patients, all survived, all shrank a little</li><li>Pigment varied, like a skin graft</li><li>Keep grafts under 1 cm wide</li></ul></div>
+            <div class="fact"><h5>Agrawal et al., 2025 (India)</h5><ul><li>11 patients, skin types III to V</li><li>Over 90% survival, one shrank by about half</li></ul></div>
+          </div>
+          <p class="small muted">A fresh composite graft can look pale, then bluish around day 7, before it pinks up as blood vessels grow in (Jackson and Reisler, 2018). Ask your surgeon what to watch for.</p>
+          <div class="figs">
+            <figure class="pfig"><img src="IMG:fmed3" alt="A small rim defect before, during surgery with the graft placed from inside the nostril, and after" loading="lazy"><figcaption>Internal: a small rim defect, before, during and after. Front Med 2026, Fig. 3. CC BY 4.0.</figcaption></figure>
+            <figure class="pfig"><img src="IMG:manafi3" alt="Uneven nostrils after rhinoplasty, before and after a small rim graft" loading="lazy"><figcaption>External: uneven nostrils after rhinoplasty, fixed with a small rim graft. Manafi et al. 2013, Fig. 3. CC BY 3.0.</figcaption></figure>
+            <figure class="pfig"><img src="IMG:manafi5" alt="Two earlier rhinoplasties, then composite grafts on both nostrils" loading="lazy"><figcaption>External: two earlier rhinoplasties, then grafts on both sides. Manafi et al. 2013, Fig. 5. CC BY 3.0.</figcaption></figure>
+          </div>
+          <h4>Sources</h4>
+          <ol class="refs">
+            <li>Manafi A, et al. Can We Add Auricular Composite Graft to Our Rhinoplasty Armamentarium? <em>World J Plast Surg</em> 2013;2(1):33–40. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4238327/" target="_blank" rel="noopener">Full text</a></li>
+            <li>Toriumi DM, et al. Auricular Composite Graft Survival in Rhinoplasty. <em>Facial Plast Surg Aesthet Med</em> 2023;25(1):6–15. <a href="https://doi.org/10.1089/fpsam.2022.0183" target="_blank" rel="noopener">DOI</a></li>
+            <li>Sazgar AA, et al. Single-Stage Alar Nostril Ring Correction Using Auricular Composite Grafts. <em>Aesthet Surg J</em> 2025;45(3):255–263. <a href="https://pubmed.ncbi.nlm.nih.gov/39676167/" target="_blank" rel="noopener">PubMed</a></li>
+            <li>Auricular composite tissue graft for the correction of alar rim defect in Asian patients. <em>Front Med</em> 2026;12:1710063. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12867902/" target="_blank" rel="noopener">Full text</a></li>
+            <li>Ahuja RB, et al. Securing aesthetic outcomes for composite grafts to alar margin and columellar defects. <em>Indian J Plast Surg</em> 2014;47(3):333–339. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4292109/" target="_blank" rel="noopener">Full text</a></li>
+            <li>Agrawal KS, et al. Auricular Composite Grafts in Fitzpatrick Type III–V Indian Noses. <em>Aesthetic Plast Surg</em> 2025;49(9):2338–2349. <a href="https://pubmed.ncbi.nlm.nih.gov/39653838/" target="_blank" rel="noopener">PubMed</a></li>
+            <li>Jackson SM, Reisler T. Alar Rim Notching Reconstruction With Auricular Composite Chondrocutaneous Graft. <em>Eplasty</em> 2018;18:ic25. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6317323/" target="_blank" rel="noopener">Full text</a></li>
+          </ol>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 3 FLAPS -->
+<section class="sec" id="m3" aria-labelledby="h-m3">
+  <div class="wrap">
+    <div class="mhead"><span class="mnum">3</span><div><h2 id="h-m3">Flaps</h2>
+      <div class="pills"><span class="pill">Skin that keeps its own blood supply</span></div></div></div>
+    <div class="indent">
+      <p class="oneline">Move nearby skin into the nostril without ever cutting it off from its blood supply.</p>
+      <div class="metaphor">
+        <figure class="mcard">
+          <svg viewBox="0 0 200 280" role="img" aria-label="A cut flower in a vase, with no roots">
+            <path d="M52 170 L148 170 L134 262 L66 262 Z" fill="var(--cartilage)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M100 172 C98 132 102 92 100 56" stroke="var(--good)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M100 130 C82 122 74 108 76 96 C92 100 100 114 100 130" fill="var(--good)"/>
+            <circle cx="100" cy="42" r="24" fill="var(--blood)" fill-opacity=".85"/><circle cx="100" cy="42" r="8" fill="#F4C34D"/>
+          </svg>
+          <figcaption><h4>A graft (method 2)</h4><p>is like a cut flower: no roots, so it has to grow new ones or it dies.</p></figcaption>
+        </figure>
+        <figure class="mcard">
+          <svg viewBox="0 0 200 280" role="img" aria-label="A plant lifted with its roots and soil still attached">
+            <path d="M40 196 C40 160 160 160 160 196 C160 232 40 232 40 196 Z" fill="#8A5B3B"/>
+            <path d="M84 222 C78 240 70 254 62 264 M100 226 C100 244 100 256 98 272 M116 222 C122 240 132 252 142 260" stroke="#8A5B3B" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M100 176 C98 136 102 96 100 56" stroke="var(--good)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M100 130 C118 122 126 108 124 96 C108 100 100 114 100 130" fill="var(--good)"/>
+            <circle cx="100" cy="42" r="24" fill="var(--blood)" fill-opacity=".85"/><circle cx="100" cy="42" r="8" fill="#F4C34D"/>
+          </svg>
+          <figcaption><h4>A flap (method 3)</h4><p>is like moving a plant with its roots still on. It keeps its blood supply, so it can't starve.</p></figcaption>
+        </figure>
+      </div>
+      <p class="read muted">The trade-off: you need spare skin nearby, you make a new cut where it comes from, and small flaps can shrink unless cartilage holds them in shape.</p>
+
+      <!-- 3a -->
+      <div class="sub" id="m3a">
+        <div class="shead"><span class="snum">3a</span><h3>Alar lobule island flap</h3><span class="pill v-good">Gentlest option</span><span class="pill">Fixes shape, not size</span></div>
+        <p class="read">A tiny crescent of spare skin from the outside of the same nostril wing is moved into the notch, usually with a curved piece of ear cartilage to round out the wing. It uses tissue you already have and keeps the scar in the crease. You need a little spare skin on the outer wing for it to work.</p>
+        <p class="like">Like rearranging furniture instead of building a new room. Nothing new comes in, so the nostril doesn't get bigger, but everything sits in a nicer shape.</p>
+        <div class="figs two">
+          <figure class="pfig"><img src="IMG:ohba2" alt="Diagram: a crescent of spare skin in the crease is lifted and moved into the notch" loading="lazy"><figcaption><strong>The flap:</strong> spare skin in the crease is moved into the notch. Ohba et al. 2024, Fig. 2. CC BY-NC-ND 4.0.</figcaption></figure>
+          <figure class="pfig"><img src="IMG:ohba5" alt="Teardrop shaped nostrils before, and 18 months after repair with alar lobule flaps and ear cartilage" loading="lazy"><figcaption><strong>Teardrop nostrils, 18 months after repair</strong> with lobule flaps and ear cartilage. Ohba et al. 2024, Fig. 5. CC BY-NC-ND 4.0.</figcaption></figure>
+        </div>
+        <p class="read muted">Where: Dr. Norihiro Ohba, <a href="https://share.google/DiEVTRIQbjC1NTxEp" target="_blank" rel="noopener">Primo Azabujuban Clinic</a>, Tokyo. Dr. Göde and Dr. Tolga Bilece have also offered it to members.</p>
+        <details class="more">
+          <summary>More detail <span class="hint">The study, more figures, what members learned</span></summary>
+          <div class="mb">
+            <div class="facts">
+              <div class="fact"><h5>The study (Ohba et al., 2024)</h5><ul><li>16 patients, 2016 to 2022, all after cosmetic nostril reduction</li><li>Main tool: curved ear cartilage, chosen to avoid the color problems of composite grafts</li><li>Flap added only when there was spare outer wing skin, 2 to 3.5 mm wide at most</li></ul></div>
+              <div class="fact"><h5>Results</h5><ul><li>Every flap survived</li><li>Nostril shape improved in every case</li><li>1 cartilage graft got infected and was removed</li><li>Typical follow-up about 9 months; retainer worn 6 months</li></ul></div>
+              <div class="fact"><h5>Good to know</h5><ul><li>To widen, the authors release a ligament and use cartilage to push the wings outward</li><li>Small study, run by the clinic's own surgeons</li><li>Members stress it needs cartilage support or the groove can flatten</li></ul></div>
+            </div>
+            <div class="figs">
+              <figure class="pfig"><img src="IMG:ohba1" alt="Diagram: a curved piece of ear cartilage placed under the wing skin" loading="lazy"><figcaption>The ear cartilage that goes with it. Ohba et al. 2024, Fig. 1.</figcaption></figure>
+              <figure class="pfig"><img src="IMG:ohba3" alt="Diagram: two stitches under the lip that define the crease" loading="lazy"><figcaption>Two "cinching" stitches sharpen the crease. Ohba et al. 2024, Fig. 3.</figcaption></figure>
+              <figure class="pfig"><img src="IMG:ohba4" alt="Flat nostril wings and blurred creases before, and 9.5 months after ear cartilage alone" loading="lazy"><figcaption>Flat wings fixed with ear cartilage alone, 9.5 months later. Ohba et al. 2024, Fig. 4.</figcaption></figure>
+            </div>
+            <p>For tight scars and tethering next to the wings, members also liked the Japanese surgeon <a href="https://www.instagram.com/tetuichiro/" target="_blank" rel="noopener">@tetuichiro</a>, though he wasn't taking overseas patients when asked.</p>
+            <h4>Source</h4>
+            <ul class="refs"><li>Ohba N, Haraoka G, Ohba M, Takahashi N. Treatment of Alar Deformity After Cosmetic Surgery. <em>Plast Reconstr Surg Glob Open</em> 2024;12(11):e6327. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11578213/" target="_blank" rel="noopener">Full text</a></li></ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- 3b -->
+      <div class="sub" id="m3b">
+        <div class="shead"><span class="snum">3b</span><h3>Lip or cheek island flap</h3><span class="pill v-risky">Promising, unproven</span><span class="pill">The only option that adds living skin</span></div>
+        <p class="read">A small island of new skin from the upper lip or cheek is moved into the nostril while still attached to a stem of blood vessels, so the wing can be pushed back out. Dr. Sercan Göde (Izmir) is the surgeon we've seen do this most. It works well for rebuilding columellas, and he started using it for alarplasty reversal in 2026.</p>
+        <p class="like">Like moving a garden hose to another plant without ever unplugging it from the tap.</p>
+        <figure class="panel narrow">
+          <svg class="sketch" viewBox="0 0 620 420" role="img" aria-labelledby="is-t">
+            <title id="is-t">A small oval of lip skin, still connected to its blood vessels, moved into the bottom of the nostril so the wing can sit further out</title>
+            <use href="#nose-base" x="50" width="520" height="360"/>
+            <ellipse cx="200" cy="336" rx="24" ry="12" fill="var(--earskin)" stroke="var(--blood)" stroke-width="2.5"/>
+            <path d="M200 348 C206 362 214 374 226 384 M196 348 C192 364 190 376 188 390" stroke="var(--blood)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <path d="M206 322 C214 306 226 298 238 294" stroke="var(--blood)" stroke-width="2.6" fill="none" marker-end="url(#arrow-red)"/>
+            <path d="M168 270 L130 262" stroke="var(--ink)" stroke-width="2.4" marker-end="url(#arrow)"/>
+            <path class="lead" d="M300 372 C270 368 246 358 226 346"/>
+            <text x="306" y="382" font-size="24">skin island, still</text><text x="306" y="408" font-size="24">attached to blood vessels</text>
+            <path class="lead" d="M70 236 C90 244 104 252 120 262"/>
+            <text x="0" y="200" font-size="24">wing can</text><text x="0" y="226" font-size="24">move out</text>
+          </svg>
+          <figcaption>A simplified idea. Real designs vary, and the exact steps for alarplasty repair haven't been published.</figcaption>
+        </figure>
+        <div class="cols two">
+          <div class="box good"><h4>Why we're interested</h4><ul><li>The only option that brings new living skin, so in theory the most size</li><li>Can't die like a graft</li><li>Nearby skin usually matches better than ear skin</li></ul></div>
+          <div class="box bad"><h4>Why we're waiting</h4><ul><li>Very new for alarplasty. Most photos are from the operating table</li><li>A member who spoke to 20+ lip flap patients says their bases narrowed again within weeks</li><li>Skin-only flaps can shrink and flatten the sills</li><li>Some patients got clear scars on the sill or lip</li></ul></div>
+        </div>
+        <p class="exlabel">Key examples</p>
+        <div class="examples">
+          EX:Dc-6ZC0DtEn
+          EX:DeW6vF1jt3r
+          EX:DdyuYXvOeFV
+        </div>
+        <details class="more">
+          <summary>More detail <span class="hint">How it works, what surgeons said, research, 7 more examples</span></summary>
+          <div class="mb">
+            <h4>How it was explained to a member</h4>
+            <p>The surgeon cuts along the crease, keeps that skin attached, and turns it in to make a new sill, which lets the wing move outward. Cartilage or an internal graft goes underneath for support. Dr. Göde told a member he'd turn a lip flap toward the wing rim to add width. He also said he hadn't done it on a Black patient yet.</p>
+            <h4>What other surgeons said</h4>
+            <ul>
+              <li><strong>Dr. Oguz:</strong> he's done cheek (nasolabial) flaps for cancer patients and the scars look bad; flaps are too much just for flare.</li>
+              <li><strong>A US surgeon:</strong> does flap reconstruction often for cancer patients but would never recommend it for cosmetic patients; his note called flap rotations for alarplasty "very risky."</li>
+            </ul>
+            <h4>What doctors have published</h4>
+            <p>No study has tested lip island flaps for cosmetic alarplasty reversal yet, but the building blocks exist:</p>
+            <ul>
+              <li><strong>Patel et al., 2022:</strong> a flap from the crease moved a pulled-in nostril base outward in 5 patients, with a rim graft for support.</li>
+              <li><strong>Nadjmi et al., 2022:</strong> rebuilt a damaged wing with a flap from the opposite nostril base, with matching color.</li>
+              <li><strong>Selçuk et al., 2012:</strong> cheek flaps with cartilage support for wing defects. Manafi points to flaps like these for defects over 2 cm.</li>
+              <li><strong>Le Diep Linh et al., 2024:</strong> upper lip island flaps to rebuild columellas.</li>
+            </ul>
+            <div class="figs">
+              <figure class="pfig"><img src="IMG:patel1" alt="Before: the right nostril base pulled inward and narrowed" loading="lazy"><figcaption>Before: right nostril base pulled in. Patel et al. 2022, Fig. 1. CC BY-NC-ND 4.0.</figcaption></figure>
+              <figure class="pfig"><img src="IMG:patel2" alt="Surgical markings for the alar groove flap" loading="lazy"><figcaption>The flap design. Patel et al. 2022, Fig. 2.</figcaption></figure>
+              <figure class="pfig"><img src="IMG:patel3" alt="Nine months after the alar groove flap" loading="lazy"><figcaption>Nine months after. Patel et al. 2022, Fig. 3.</figcaption></figure>
+            </div>
+            <h4>More examples</h4>
+            <div class="examples">
+              EX:DWZJXExjdWT
+              EX:DXOl6j1jTTu
+              EX:DTrpzjbCB2S
+              EX:Cwo231ssL6S
+              EX:DHOkgaOie6A
+              EX:DaDwPhCDK2-
+              EX:DWkekGciEX0
+            </div>
+            <h4>Sources</h4>
+            <ol class="refs">
+              <li>Patel N, et al. Inferiorly Based Alar Groove Flap for Correction of Alar Base Malposition and Nasal Stenosis. <em>Plast Reconstr Surg Glob Open</em> 2022;10:e4334. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9116948/" target="_blank" rel="noopener">Full text</a></li>
+              <li>Nadjmi N, et al. A Novel Technique for Nasal Alar Reconstruction. <em>Plast Reconstr Surg Glob Open</em> 2022;10:e4284. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9029969/" target="_blank" rel="noopener">Full text</a></li>
+              <li>Selçuk CT, et al. Reconstruction of Full-Thickness Nasal Alar Defects Using Cartilage-Supported Nonfolded Nasolabial Flaps. <em>J Craniofac Surg</em> 2012. <a href="https://journals.lww.com/jcraniofacialsurgery/abstract/2012/11000/reconstruction_of_full_thickness_nasal_alar.10.aspx" target="_blank" rel="noopener">Abstract</a></li>
+              <li>Le Diep Linh, et al. The Reconstruction of the Nasal Columella Defect Using Domino Flaps. <em>Arch Plast Surg</em> 2024;51(4):367–371. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11257744/" target="_blank" rel="noopener">Full text</a></li>
+            </ol>
+          </div>
+        </details>
+      </div>
+
+      <div class="bottom"><p><b>Bottom line.</b> For notches with spare wing skin, the alar lobule flap with cartilage is the safest bet we found. Lip and cheek island flaps are the only real hope for lots of tissue, but there are almost no healed, long-term results yet. Several of us plan to try gentler fixes first and wait.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 OTHER -->
+<section class="sec band" id="m4" aria-labelledby="h-m4">
+  <div class="wrap">
+    <div class="mhead"><span class="mnum">4</span><div><h2 id="h-m4">Other options</h2>
+      <div class="pills"><span class="pill">Usually alongside methods 1 to 3</span></div></div></div>
+    <div class="indent">
+      <ul class="read">
+        <li><strong>Fix the structure first.</strong> Pulled-up or collapsed wings can often be fixed with cartilage grafts before touching skin. One study improved pulled-up rims by about 2.7 mm on average, though heavy scarring limited some results.</li>
+        <li><strong>V-to-Y advancement.</strong> A small flap inside the nostril pushed outward, roughly 2 to 3 mm per side. Few surgeons offer it, and a member saw a botched case with outside scars.</li>
+        <li><strong>Scar release.</strong> Loosening tight scars, sometimes with a Z-shaped cut, can help with smiling, tightness and itching. It won't make nostrils wider.</li>
+        <li><strong>Scar care.</strong> Laser, dermabrasion, tretinoin and medical tattooing all helped some members and not others. Dermabrasion carries pigment risk on darker skin.</li>
+        <li><strong>Wait for swelling to settle.</strong> Early on, nostrils can look smaller and stiffer than they'll end up.</li>
+      </ul>
+      <details class="more">
+        <summary>More detail <span class="hint">Examples, research to watch, sources</span></summary>
+        <div class="mb">
+          <div class="examples">
+            EX:DcIw_t7jiQn
+            EX:DVfzFTJk8OF
+          </div>
+          <h4>Research to watch</h4>
+          <p>Verteporfin, a drug being studied for healing with less scarring (<a href="https://med.stanford.edu/profiles/michael-longaker" target="_blank" rel="noopener">Dr. Michael Longaker's lab, Stanford</a>), and lab-grown tissue that survives until it connects to blood vessels (<a href="https://cordis.europa.eu/project/id/101266635" target="_blank" rel="noopener">EU research project</a>). Neither is available as a treatment yet.</p>
+          <h4>Sources</h4>
+          <ol class="refs">
+            <li>Marianetti TM, et al. Correction of alar rim retraction by lateral crural extension graft. <em>Acta Otorhinolaryngol Ital</em> 2020;40(3):211–216. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7416365/" target="_blank" rel="noopener">Full text</a></li>
+            <li>Randall NR, Peraza LR, Hamilton GS. Correction and prevention of tip asymmetries, bossae, and alar retraction. <em>Plast Aesthet Res</em> 2024;11:18. <a href="https://www.oaepublish.com/articles/2347-9264.2023.115" target="_blank" rel="noopener">Full text</a></li>
+          </ol>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- QUESTIONS -->
+<section class="sec" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <p class="eyebrow">Before you book</p>
+    <h2 id="h-ask">Questions to ask any surgeon</h2>
+    <ol class="checklist">
+      <li><strong>Is my problem rotation, a pulled-up rim, weak cartilage, or missing skin?</strong> Each has a different fix.</li>
+      <li><strong>Can I see results a year or more after surgery, not on the operating table?</strong> Several members saw grafts and flaps shrink back within weeks.</li>
+      <li><strong>Have you done this on someone with my skin tone? Can I talk to them?</strong></li>
+      <li><strong>Will the graft or flap go inside or outside? Where will every scar be?</strong></li>
+      <li><strong>What will hold the new shape?</strong> Ask whether cartilage support is part of the plan.</li>
+      <li><strong>Which stitches will you use outside, and when do they come out?</strong> Members were told facial stitches usually come out around day 7.</li>
+      <li><strong>What's your plan for scar care afterwards?</strong></li>
+      <li><strong>Exactly how many millimeters will you add or remove, and will it be in my report?</strong></li>
+      <li><strong>If I don't like it, can it be undone?</strong></li>
+      <li><strong>Will you do anything I haven't agreed to in writing?</strong> Many of us woke up with an alarplasty we never asked for.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="sec band" id="refs" aria-labelledby="h-refs">
+  <div class="wrap">
+    <p class="eyebrow">Everything in one place</p>
+    <h2 id="h-refs">Sources and links</h2>
+    <p class="sum">All studies and examples from this page. Personal accounts and anything not about repair are left out.</p>
+    <details class="more">
+      <summary>Studies <span class="hint">15</span></summary>
+      <div class="mb">
+        <ol class="refs">
+          <li>Ohba N, et al. Treatment of Alar Deformity After Cosmetic Surgery. <em>PRS Global Open</em> 2024. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11578213/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Manafi A, et al. Can We Add Auricular Composite Graft to Our Rhinoplasty Armamentarium? <em>World J Plast Surg</em> 2013. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4238327/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Toriumi DM, et al. Auricular Composite Graft Survival in Rhinoplasty. <em>Facial Plast Surg Aesthet Med</em> 2023. <a href="https://doi.org/10.1089/fpsam.2022.0183" target="_blank" rel="noopener">DOI</a></li>
+          <li>Sazgar AA, et al. Single-Stage Alar Nostril Ring Correction Using Auricular Composite Grafts. <em>Aesthet Surg J</em> 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/39676167/" target="_blank" rel="noopener">PubMed</a></li>
+          <li>Auricular composite tissue graft for alar rim defect in Asian patients. <em>Front Med</em> 2026. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12867902/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Ahuja RB, et al. Composite grafts to alar margin and columellar defects. <em>Indian J Plast Surg</em> 2014. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4292109/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Agrawal KS, et al. Auricular Composite Grafts in Fitzpatrick Type III–V Indian Noses. <em>Aesthetic Plast Surg</em> 2025. <a href="https://pubmed.ncbi.nlm.nih.gov/39653838/" target="_blank" rel="noopener">PubMed</a></li>
+          <li>Jackson SM, Reisler T. Alar Rim Notching Reconstruction With Auricular Composite Graft. <em>Eplasty</em> 2018. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6317323/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Patel N, et al. Inferiorly Based Alar Groove Flap for Alar Base Malposition. <em>PRS Global Open</em> 2022. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9116948/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Nadjmi N, et al. A Novel Technique for Nasal Alar Reconstruction. <em>PRS Global Open</em> 2022. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9029969/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Selçuk CT, et al. Full-Thickness Alar Defects With Cartilage-Supported Nasolabial Flaps. <em>J Craniofac Surg</em> 2012. <a href="https://journals.lww.com/jcraniofacialsurgery/abstract/2012/11000/reconstruction_of_full_thickness_nasal_alar.10.aspx" target="_blank" rel="noopener">Abstract</a></li>
+          <li>Le Diep Linh, et al. Reconstruction of the Nasal Columella Using Domino Flaps. <em>Arch Plast Surg</em> 2024. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11257744/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Marianetti TM, et al. Correction of Alar Rim Retraction by Lateral Crural Extension Graft. 2020. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7416365/" target="_blank" rel="noopener">Full text</a></li>
+          <li>Rohrich RJ, Afrooz PN. Revisiting the Alar-Columellar Relationship. <em>Plast Reconstr Surg</em> 2019. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Revisiting+the+Alar-Columellar+Relationship+Classification+and+Correction" target="_blank" rel="noopener">PubMed</a></li>
+          <li>Randall NR, et al. Correction and prevention of tip asymmetries, bossae, and alar retraction. <em>Plast Aesthet Res</em> 2024. <a href="https://www.oaepublish.com/articles/2347-9264.2023.115" target="_blank" rel="noopener">Full text</a></li>
+        </ol>
+      </div>
+    </details>
+    <details class="more">
+      <summary>Instagram examples by method <span class="hint">LIBCOUNT posts</span></summary>
+      <div class="mb">
+        LIBRARY
+      </div>
+    </details>
+    <details class="more">
+      <summary>Surgeons and clinics mentioned <span class="hint">As reported by members</span></summary>
+      <div class="mb">
+        <ul class="lib">
+          <li><a href="https://www.instagram.com/dr.oguzhanoguz/" target="_blank" rel="noopener">Dr. Oguzhan Oguz</a><p>Istanbul. Internal composite grafts.</p></li>
+          <li><a href="https://www.instagram.com/drnazari.ent/" target="_blank" rel="noopener">Dr. Shahriar Nazari</a><p>Iran. Internal composite grafts ("alar expansion").</p></li>
+          <li><a href="https://www.instagram.com/drblasgarcia/" target="_blank" rel="noopener">Dr. Blas García</a><p>Spain. Internal composite grafts. Long waiting list.</p></li>
+          <li><a href="https://www.instagram.com/drjasonplasticsurgery/" target="_blank" rel="noopener">Dr. Jason Roostaeian</a><p>US. External composite grafts.</p></li>
+          <li><a href="https://www.instagram.com/dr.sazgar/" target="_blank" rel="noopener">Dr. Amir Sazgar</a><p>Tehran. External composite grafts; published a 45-patient study.</p></li>
+          <li><a href="https://www.instagram.com/dr_shingyochi/" target="_blank" rel="noopener">Dr. Shingyochi</a><p>Japan. External composite grafts and alar revisions.</p></li>
+          <li><a href="https://www.instagram.com/sercangode_docdr/" target="_blank" rel="noopener">Dr. Sercan Göde</a><p>Izmir. Lip and island flaps.</p></li>
+          <li><a href="https://share.google/DiEVTRIQbjC1NTxEp" target="_blank" rel="noopener">Primo Azabujuban Clinic (Dr. Norihiro Ohba)</a><p>Tokyo. Alar lobule island flaps with ear cartilage.</p></li>
+          <li><a href="https://www.instagram.com/tetuichiro/" target="_blank" rel="noopener">@tetuichiro</a><p>Japan. Scar and tethering revisions.</p></li>
+          <li><a href="https://www.instagram.com/drtolgabilece/" target="_blank" rel="noopener">Dr. Tolga Bilece</a><p>Turkey. Open to alar lobule flaps.</p></li>
+          <li><a href="https://www.instagram.com/rinoistanbul/" target="_blank" rel="noopener">Dr. Abdulkadir Göksel</a><p>Istanbul. Has used a lip flap technique.</p></li>
+          <li><a href="https://share.google/Ig2BydiaOjx3GAx4z" target="_blank" rel="noopener">Dr. Frederick Menick</a><p>Pioneer of nasal flap reconstruction (retired). Useful reading on flap design.</p></li>
+          <li><a href="https://hangangsoo.co.kr/eng/mobile/03_scar/scar_1.html" target="_blank" rel="noopener">Scar clinic, South Korea</a><p>Shared for scar treatment research.</p></li>
+        </ul>
+      </div>
+    </details>
+    <details class="more">
+      <summary>Word list <span class="hint">What the doctor words mean</span></summary>
+      <div class="mb">
+        <dl class="gloss">
+          <div><dt>Ala (alae)</dt><dd>The nostril wing.</dd></div>
+          <div><dt>Alar lobule</dt><dd>The soft, rounded part of the wing near the bottom.</dd></div>
+          <div><dt>Alar crease</dt><dd>The groove where the wing meets your cheek.</dd></div>
+          <div><dt>Sill</dt><dd>The little floor at the bottom of each nostril.</dd></div>
+          <div><dt>Columella</dt><dd>The strip of skin between the nostrils.</dd></div>
+          <div><dt>Alarplasty</dt><dd>Surgery that cuts skin from the nostrils to make them smaller. Also called alar base reduction.</dd></div>
+          <div><dt>Weir excision</dt><dd>An alarplasty that cuts both the sill and a wedge from the wing.</dd></div>
+          <div><dt>Flare</dt><dd>How much the wings curve outward.</dd></div>
+          <div><dt>Notching, teardrop deformity</dt><dd>A dent in the nostril edge, or a nostril pulled into a teardrop shape.</dd></div>
+          <div><dt>Retraction</dt><dd>When the nostril rim is pulled up too high.</dd></div>
+          <div><dt>Nostril show</dt><dd>How much of the nostril openings you can see.</dd></div>
+          <div><dt>Rotation, derotation</dt><dd>Turning the nose tip up, or back down.</dd></div>
+          <div><dt>SEG</dt><dd>Septal extension graft. A strong cartilage piece that sets where the tip points.</dd></div>
+          <div><dt>Cartilage graft</dt><dd>Cartilage only. Adds support and shape, not skin.</dd></div>
+          <div><dt>Composite graft</dt><dd>Skin plus cartilage (or fat), moved as one piece. Adds skin.</dd></div>
+          <div><dt>Flap</dt><dd>Tissue moved while staying attached to its blood supply.</dd></div>
+          <div><dt>Island flap</dt><dd>A flap attached only by a small stem of blood vessels, so it can move further.</dd></div>
+          <div><dt>Table photo</dt><dd>A photo taken on the operating table. Results look better than they'll end up.</dd></div>
+          <div><dt>Fitzpatrick type</dt><dd>A scale from I (very fair) to VI (deeply pigmented). Matters for scars and pigment.</dd></div>
+        </dl>
+      </div>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap"><div class="read">
+    <p><strong>This is not medical advice.</strong> It's a summary of what a group of patients learned and what we found in published studies. Every nose is different. Get examined by qualified surgeons before deciding anything.</p>
+    <p>Member experiences are paraphrased or quoted without names. Surgeon comments are as reported by members after their own consultations. Study figures are shown unchanged from open-access papers with credit and license. Instagram images are credited and link to the original posts.</p>
+    <p class="muted small">Last updated October 20, 2026.</p>
+  </div></div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themebtn');
+  try{var saved=localStorage.getItem('theme'); if(saved) root.setAttribute('data-theme',saved);}catch(e){}
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next=dark?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+
+  // derotation slider
+  var S={x:238,y:222}, T0={x:300,y:196}, C0={x:268,y:216}, D={x:232,y:150};
+  function rot(p,deg){var a=-deg*Math.PI/180, dx=p.x-S.x, dy=p.y-S.y; return {x:S.x+dx*Math.cos(a)-dy*Math.sin(a), y:S.y+dx*Math.sin(a)+dy*Math.cos(a)};}
+  var face=document.getElementById('face'), lower=document.getElementById('lower'), nos=document.getElementById('nostril'),
+      out=document.getElementById('rot-out'), ang=document.getElementById('angleText'), range=document.getElementById('rot');
+  function f(n){return n.toFixed(1);}
+  function draw(deg){
+    var T=rot(T0,deg), C=rot(C0,deg);
+    face.setAttribute('d','M0 0 L170 0 C178 40 190 80 204 112 C214 132 222 142 '+D.x+' '+D.y+
+      ' C262 162 '+f(T.x-14)+' '+f(T.y-22)+' '+f(T.x)+' '+f(T.y)+
+      ' C'+f(T.x+6)+' '+f(T.y+14)+' '+f(C.x+14)+' '+f(C.y+6)+' '+f(C.x)+' '+f(C.y)+
+      ' Q'+(S.x+8)+' '+(S.y-2)+' '+S.x+' '+S.y+
+      ' C248 236 256 250 252 264 C250 280 247 292 246 300 L240 320 L0 320 Z');
+    lower.setAttribute('transform','rotate('+(-deg)+' '+S.x+' '+S.y+')');
+    nos.setAttribute('ry',Math.max(1.2,Math.min(10,2+(deg+8)*0.33)).toFixed(1));
+    ang.textContent='angle ≈ '+Math.round(95+deg)+'°';
+    out.textContent = deg>8 ? 'Nostril show: a lot. This is an over-rotated, "upturned" tip.'
+      : deg>-1 ? 'Nostril show: some. Notches and uneven sides are easier to hide here.'
+      : 'Nostril show: very little. Even uneven nostrils are mostly hidden.';
+  }
+  range.addEventListener('input',function(){draw(+range.value)}); draw(+range.value);
+
+  // graft toggle
+  var gb=document.querySelectorAll('#graftfig .toggle button'), ext=document.getElementById('g-ext'), intl=document.getElementById('g-int'), cap=document.getElementById('graft-cap');
+  var caps={internal:'Internal: the graft is tucked into the lining inside the nostril and pushes the wing outward (arrows). Hidden from the front, but the gain is modest.',
+            external:'External: the graft is sewn into the outside of the wing, right where the wedge was cut. It rebuilds the shape most directly, but you can see the patch.'};
+  gb.forEach(function(b){b.addEventListener('click',function(){
+    var m=b.getAttribute('data-mode'); gb.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+    ext.style.display=m==='external'?'':'none'; intl.style.display=m==='internal'?'':'none'; cap.textContent=caps[m];
+  })});
+
+  // quiz
+  var quiz=document.getElementById('quiz'), qout=document.getElementById('quiz-out');
+  function val(n){var e=quiz.querySelector('input[name="'+n+'"]:checked'); return e?e.value:null;}
+  quiz.addEventListener('change',function(){
+    var cut=val('cut'), tip=val('tip'), want=val('want'), items=[];
+    if(tip==='up') items.push('<a href="#m1">1. Derotation</a>: worth asking about, since an upturned tip puts the nostrils on display.');
+    if(tip==='no' && want==='flare') items.push('1. Derotation probably won\'t do much, since your tip isn\'t turned up.');
+    if(want==='shape' || cut==='sill') items.push('<a href="#m3a">3a. Alar lobule flap</a> with ear cartilage: the gentlest fix for notches and teardrop shapes, if you have spare wing skin.');
+    if(want==='size' || cut==='wedge' || cut==='both') items.push('<a href="#m2a">2a. Internal composite grafts</a>: some extra size without an outside scar.');
+    if(want==='size') items.push('<a href="#m3b">3b. Island flaps</a>: the only option that adds a lot of living tissue, but still too new to trust.');
+    if(want==='flare') items.push('For flare, members found grafts and flaps disappointing. Internal composites can add a little.');
+    if(cut==='unsure') items.push('First, <a href="#start">get an independent surgeon to measure what was cut</a>.');
+    items.push('Ask whether <a href="#m4">structural fixes (4)</a> for weak or pulled-up wings should come first.');
+    qout.innerHTML='<p style="margin:0 0 .4rem"><strong>Read these first:</strong></p><ul>'+items.map(function(i){return '<li>'+i+'</li>'}).join('')+'</ul><p class="muted small" style="margin:0">This only points you to parts of this page. It can\'t tell you what\'s right for your nose.</p>';
+  });
+
+  // nav highlight
+  var navA=[].slice.call(document.querySelectorAll('.navlinks a')), secs=navA.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ var i=secs.indexOf(e.target); navA.forEach(function(a,j){ if(j===i) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); }); } })},{rootMargin:'-35% 0px -60% 0px'});
+    secs.forEach(function(s){ if(s) so.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
