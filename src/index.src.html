@@ -182,7 +182,7 @@ details.more details.more{background:var(--paper)}
 @media (max-width:640px){details.more>summary .hint{display:none}}
 
 /* examples */
-.examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem;margin:1rem 0 .4rem}
+.examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(15.5rem,100%),1fr));gap:1rem;margin:1rem 0 .4rem}
 .ex{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;margin:0}
 .ex .ph{display:block;position:relative;aspect-ratio:1/1;overflow:hidden;background:#10131B}
 .ex .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
@@ -198,14 +198,14 @@ details.more details.more{background:var(--paper)}
 .exlabel{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:1.6rem 0 .2rem}
 
 /* figures */
-.figs{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 1.2rem;align-items:start}
-.figs.two{grid-template-columns:repeat(auto-fill,minmax(20rem,1fr))}
+.figs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(17rem,100%),1fr));gap:1rem;margin:1rem 0 1.2rem;align-items:start}
+.figs.two{grid-template-columns:repeat(auto-fill,minmax(min(20rem,100%),1fr))}
 .pfig{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.7rem;margin:0}
 .pfig img{border-radius:6px;background:#fff;width:100%;max-height:28rem;object-fit:contain}
 .pfig figcaption{font-size:.9rem;color:var(--ink-2);margin-top:.55rem;line-height:1.5}
 
 /* facts / quotes */
-.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.9rem;margin:.8rem 0 1.2rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(15rem,100%),1fr));gap:.9rem;margin:.8rem 0 1.2rem}
 .fact{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem}
 .fact h5{font-family:var(--serif);font-size:1.02rem;margin:0 0 .35rem;font-weight:600}
 .fact ul{margin:0;padding-left:1.05rem;font-size:.97rem}
@@ -252,15 +252,71 @@ details.more details.more{background:var(--paper)}
 .checklist li::before{content:counter(q);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-family:var(--serif);font-weight:700;display:grid;place-items:center;font-size:.95rem}
 
 /* references */
-.lib{list-style:none;padding:0;margin:.6rem 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:.6rem}
+.lib{list-style:none;padding:0;margin:.6rem 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(19rem,100%),1fr));gap:.6rem}
 .lib li{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.7rem .9rem}
 .lib a{font-weight:600;text-decoration:none}
 .lib a:hover{text-decoration:underline}
 .lib p{margin:.25rem 0 0;font-size:.92rem;color:var(--ink-2);line-height:1.45}
-.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.3rem 2rem;margin:.4rem 0}
+.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(17rem,100%),1fr));gap:.3rem 2rem;margin:.4rem 0}
 .gloss dt{font-family:var(--serif);font-weight:600;font-size:1.05rem;margin-top:.8rem}
 .gloss dd{margin:.1rem 0 0;color:var(--ink-2);font-size:.98rem}
 footer.site{border-top:1px solid var(--line);padding:2.4rem 0 4rem;font-size:.95rem;color:var(--ink-2)}
+/* section menu: replaces the nav wherever it would be cut off (below 1040px) */
+.menubtn{display:none;align-items:center;gap:.45rem;margin-left:auto;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;height:2.75rem;padding:0 .9rem;font:inherit;font-size:1rem;font-weight:600;cursor:pointer;flex:none}
+.menubtn svg{width:18px;height:18px}
+@media (max-width:1039px){
+  .menubtn{display:inline-flex}
+  .themebtn{width:2.75rem;height:2.75rem}
+  .navlinks{display:none}
+  .topbar.open .navlinks{display:flex;flex-direction:column;gap:.1rem;position:absolute;top:calc(100% + .4rem);right:1rem;width:min(20rem,calc(100vw - 2rem));margin:0;padding:.4rem;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.14)}
+  .topbar.open .navlinks a{font-size:1.08rem;padding:.7rem .8rem}
+}
+
+/* phones */
+@media (max-width:640px){
+  /* overview table rows become compact cards: name, description, then verdict and ratings */
+  .ov tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.7rem;row-gap:.3rem;padding:.85rem 1rem}
+  .ov tr.subrow{padding-left:2.1rem}
+  .ov td{padding:0}
+  .ov td:nth-child(2){flex:1 1 auto;font-size:1.08rem}
+  .ov td:nth-child(3){order:3;flex:0 0 100%}
+  .ov td:nth-child(3)::before,.ov td:nth-child(6)::before{content:none}
+  .ov td:nth-child(6){order:4}
+  .ov td:nth-child(4){order:5}
+  .ov td:nth-child(5){order:6}
+  .ov td:nth-child(4),.ov td:nth-child(5){font-size:.95rem;color:var(--ink-2)}
+  .ov td a{display:inline-block;padding:.5rem 0;margin:-.5rem 0}
+
+  /* cut diagrams: small picture beside the text instead of three big stacked cards */
+  .cutgrid{gap:.7rem}
+  .cutcard{display:grid;grid-template-columns:8.5rem 1fr;gap:.9rem;align-items:center;padding:.8rem .9rem}
+  .cutcard h4{margin-top:0}
+
+  /* method headers: pills sit under the number and title, full width */
+  .mhead{display:grid;grid-template-columns:auto 1fr;column-gap:.9rem;align-items:center}
+  .mhead>div{display:contents}
+  .mhead h2{margin-top:0}
+  .mhead .pills{grid-column:1/-1;margin-top:.7rem}
+  .mhead .pill{white-space:normal}
+
+  /* example cards: a horizontal swipe row; the next card peeks in to show there is more */
+  .examples{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:.8rem;padding-bottom:.5rem;overscroll-behavior-x:contain}
+  .examples>.ex{flex:0 0 85%;scroll-snap-align:start}
+  .examples>.ex:only-child{flex-basis:100%}
+  .ex .lk a{display:inline-block;padding:.5rem 0;margin:-.5rem 0}
+
+  .figs,.figs.two{grid-template-columns:1fr}
+
+  /* tap targets of at least 44px */
+  .brand{min-height:2.75rem}
+  .choices label{padding:.55rem .9rem;min-height:2.75rem}
+  .toggle button{padding:.6rem 1rem;min-height:2.75rem}
+  .rotlab input[type=range]{-webkit-appearance:none;appearance:none;height:2.75rem;background:transparent}
+  .rotlab input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:var(--line)}
+  .rotlab input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:28px;height:28px;margin-top:-11px;border-radius:50%;background:var(--accent);border:3px solid var(--card);box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .rotlab input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:var(--line)}
+  .rotlab input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--accent);border:3px solid var(--card)}
+}
 </style>
 </head>
 <body>
@@ -285,7 +341,7 @@ footer.site{border-top:1px solid var(--line);padding:2.4rem 0 4rem;font-size:.95
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Alarplasty Repair Guide, back to top"><svg viewBox="0 0 520 360" aria-hidden="true"><use href="#nose-base"/></svg><span>Alarplasty Repair Guide</span></a>
-    <nav class="navlinks" aria-label="Sections">
+    <nav class="navlinks" id="navlinks" aria-label="Sections">
       <a href="#start">Start here</a>
       <a href="#m1"><b>1</b>Derotation</a>
       <a href="#m2"><b>2</b>Composite grafts</a>
@@ -294,6 +350,7 @@ footer.site{border-top:1px solid var(--line);padding:2.4rem 0 4rem;font-size:.95
       <a href="#ask">Questions</a>
       <a href="#refs">Sources</a>
     </nav>
+    <button class="menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="navlinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Sections</button>
     <button class="themebtn" id="themebtn" type="button" aria-label="Switch light or dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
   </div>
 </header>
@@ -988,6 +1045,14 @@ footer.site{border-top:1px solid var(--line);padding:2.4rem 0 4rem;font-size:.95
     items.push('Ask whether <a href="#m4">structural fixes (4)</a> for weak or pulled-up wings should come first.');
     qout.innerHTML='<p style="margin:0 0 .4rem"><strong>Read these first:</strong></p><ul>'+items.map(function(i){return '<li>'+i+'</li>'}).join('')+'</ul><p class="muted small" style="margin:0">This only points you to parts of this page. It can\'t tell you what\'s right for your nose.</p>';
   });
+
+  // section menu (shown below 1040px instead of the nav links)
+  var tb=document.querySelector('.topbar'), mb=document.getElementById('menubtn');
+  function setMenu(o){ tb.classList.toggle('open',o); mb.setAttribute('aria-expanded',String(o)); }
+  mb.addEventListener('click',function(e){ e.stopPropagation(); setMenu(!tb.classList.contains('open')); });
+  document.querySelectorAll('.navlinks a').forEach(function(a){ a.addEventListener('click',function(){ setMenu(false); }); });
+  document.addEventListener('click',function(e){ if(!tb.contains(e.target)) setMenu(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
 
   // nav highlight
   var navA=[].slice.call(document.querySelectorAll('.navlinks a')), secs=navA.map(function(a){return document.querySelector(a.getAttribute('href'))});
