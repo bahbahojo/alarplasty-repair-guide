@@ -124,6 +124,14 @@ class SiteDataTest(unittest.TestCase):
         for marker in ("EX:", "IMG:", "LIBRARY", "LIBCOUNT"):
             self.assertNotIn(marker, out)
 
+    def test_no_group_chat_wording(self) -> None:
+        """Content rule: the public site never refers to the private chat or its members."""
+        out = build.build(self.template, build.C, build.NOPHOTO, build.GROUPS)
+        text = re.sub(r"data:image/webp;base64,[A-Za-z0-9+/=]+", "", out)
+        banned = r"\bmembers?\b|\bmember's\b|\bour group\b|\bgroup chat\b|whatsapp|\bchat\b|\bof us\b|\bwe've\b|\bwe're\b|\bour take\b"
+        hits = [m.group(0) for m in re.finditer(banned, text, re.I)]
+        self.assertEqual(hits, [])
+
     def test_composite_cards_are_labeled(self) -> None:
         """Content rule: every card in the 2a/2b library groups has an Internal/External badge."""
         for heading, keys in build.GROUPS:
