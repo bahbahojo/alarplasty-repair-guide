@@ -148,6 +148,14 @@ class SiteDataTest(unittest.TestCase):
         hits = [m.group(0) for m in re.finditer(banned, text, re.I)]
         self.assertEqual(hits, [])
 
+    def test_no_hearsay_wording(self) -> None:
+        """Content rule: no second-hand claims about what surgeons told patients."""
+        out = build.build(self.template, build.C, build.NOPHOTO, build.GROUPS)
+        text = re.sub(r"data:image/webp;base64,[A-Za-z0-9+/=]+", "", out)
+        banned = r"\breportedly\b|\btold (?:a|one|another|the same) patient|\bas reported by\b|\bpatients have (?:felt|found|reported)\b"
+        hits = [m.group(0) for m in re.finditer(banned, text, re.I)]
+        self.assertEqual(hits, [])
+
     def test_composite_cards_are_labeled(self) -> None:
         """Content rule: every card in the composite graft library groups has an Internal/External badge."""
         composite = [h for h, _ in build.GROUPS if "composite" in h.lower()]
