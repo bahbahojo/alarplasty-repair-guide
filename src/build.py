@@ -54,7 +54,7 @@ C: Dict[str, Card] = {
         None),
     'nazari1': ('INT', 'Dr. Shahriar Nazari (Iran)',
         'Two cases from his Instagram stories, tagged "alar expansion". His captions read "nasal reconstruction and enlarging the nasal ala".',
-        [('His Instagram', 'https://www.instagram.com/drnazari.ent/'), ('Second case', 'zoom:nazari2')]),
+        [('View on Instagram', 'https://www.instagram.com/p/DdedpjFNy-d/'), ('Second case', 'zoom:nazari2')]),
     'C4aw7VvLpcT': ('EXT', 'Dr. Jason Roostaeian (US)',
         '"Correcting the over-resected alar base." These appear to have healed well, with visibly bigger nostrils.',
         None),
