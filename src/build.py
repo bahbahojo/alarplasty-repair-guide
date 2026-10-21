@@ -46,8 +46,8 @@ C: Dict[str, Card] = {
     'CfKFXSSM_ij': ('INT', 'Dr. Oguzhan Oguz',
         'Rebuilding a lost nostril from the inside: before, at 1 month and at 7 months. It appears to have healed well. He posted the same case again in April 2026 as a video.',
         [('Photo post', 'https://www.instagram.com/p/CfKFXSSM_ij/'), ('April 2026 video', 'https://www.instagram.com/p/DW9bqs9DP2O/')]),
-    'DA_U7hhzFpO': ('INT', 'Dr. Kidakorn Kiranantawat (Thailand), 2024',
-        'Severe nostril narrowing after cosmetic surgery, fixed with a composite graft from the ear. Shown 1 year and 10 months later.',
+    'DA_U7hhzFpO': ('EXT', 'Dr. Kidakorn Kiranantawat (Thailand), 2024',
+        'A nostril scarred nearly shut after cosmetic surgery. The scar was released, then a skin-and-cartilage graft from the ear was placed on the raw edge of the opened nostril. Shown 1 year and 10 months later.',
         None),
     'C9T-1AKikBg': ('INT', 'Dr. Sercan Göde',
         '"Larger and better nostrils are possible." Rib cartilage plus composite grafts, on darker skin.',
@@ -56,8 +56,8 @@ C: Dict[str, Card] = {
         'A complicated ethnic revision with a composite graft on one side. One of very few published examples on a Black patient.',
         None),
     'nazari1': ('INT', 'Dr. Shahriar Nazari (Iran)',
-        'From his Instagram stories, tagged "alar expansion". His captions read "nasal reconstruction and enlarging the nasal ala".',
-        [('His Instagram', 'https://www.instagram.com/drnazari.ent/')]),
+        'Two cases from his Instagram stories, tagged "alar expansion". His captions read "nasal reconstruction and enlarging the nasal ala".',
+        [('His Instagram', 'https://www.instagram.com/drnazari.ent/'), ('Second case', 'zoom:nazari2')]),
     'C2PcmLwCJjr': ('INT', 'Dr. Sercan Göde, 2024',
         'An alar retraction repair. One patient recalls this case differently, as outside grafts that scarred, so ask him directly.',
         None),
@@ -66,15 +66,12 @@ C: Dict[str, Card] = {
         None),
     'DdjfmFaiHD1': ('EXT', 'Dr. Amir Sazgar (Tehran), October 2026',
         'One month after rebuilding a nose with six failed surgeries and past skin death. Too early to judge the scars.',
-        [('The post', 'https://www.instagram.com/p/DdjfmFaiHD1/'), ('His Instagram', 'https://www.instagram.com/dr.sazgar/')]),
+        None),
     'DUmywnTE25f': ('EXT', 'Dr. Shingyochi (Japan), February 2026',
         'A difficult alar revision. You can see the old alarplasty scars at the base of the nostrils.',
-        [('The post', 'https://www.instagram.com/p/DUmywnTE25f/'), ('A 2025 case', 'https://www.instagram.com/p/DKQwfgBzBS9/'), ('His Instagram', 'https://www.instagram.com/dr_shingyochi/')]),
+        [('View on Instagram', 'https://www.instagram.com/p/DUmywnTE25f/'), ('A 2025 case', 'https://www.instagram.com/p/DKQwfgBzBS9/')]),
     'Dc-6ZC0DtEn': (None, 'Dr. Sercan Göde, September 2026',
         '"Alar base reversing by local island flaps." Taken on the operating table, so expect it to settle.',
-        None),
-    'DeW6vF1jt3r': (None, 'Dr. Sercan Göde, October 2026',
-        "One year after a complex revision with flaps. The early scars looked rough. One of the few one-year results available.",
         None),
     'DdyuYXvOeFV': (None, 'Dr. Sercan Göde',
         '"Alar base reduction reversal." A lip island flap case, before and after.',
@@ -109,11 +106,12 @@ C: Dict[str, Card] = {
 }
 NOPHOTO: Set[str] = {'DWkekGciEX0', 'DHOkgaOie6A'}
 GROUPS: List[Tuple[str, List[str]]] = [
-    ('1. Derotation', ['CtxKAyvsVrC', 'DNlENwgRSK6', 'CvzpOS9LfUA']),
-    ('2a. Internal composite grafts', ['CfKFXSSM_ij', 'DA_U7hhzFpO', 'C9T-1AKikBg', 'C7AHUWHr0EC', 'nazari1', 'C2PcmLwCJjr']),
-    ('2b. External composite grafts', ['C4aw7VvLpcT', 'DdjfmFaiHD1', 'DUmywnTE25f']),
-    ('3b. Lip and cheek island flaps', ['Dc-6ZC0DtEn', 'DeW6vF1jt3r', 'DdyuYXvOeFV', 'DWZJXExjdWT', 'DXOl6j1jTTu', 'DTrpzjbCB2S', 'Cwo231ssL6S', 'DHOkgaOie6A', 'DaDwPhCDK2-', 'DWkekGciEX0']),
-    ('4. Other', ['DRKpan3DK2B', 'DcIw_t7jiQn', 'DVfzFTJk8OF']),
+    ('1a. Internal composite grafts', ['CfKFXSSM_ij', 'nazari1', 'C7AHUWHr0EC', 'C9T-1AKikBg', 'C2PcmLwCJjr']),
+    ('1b. External composite grafts', ['C4aw7VvLpcT', 'DdjfmFaiHD1', 'DA_U7hhzFpO', 'DUmywnTE25f']),
+    ('2b. Lip and cheek island flaps', ['DdyuYXvOeFV', 'Dc-6ZC0DtEn', 'DWZJXExjdWT', 'DXOl6j1jTTu', 'DTrpzjbCB2S', 'Cwo231ssL6S', 'DHOkgaOie6A', 'DaDwPhCDK2-', 'DWkekGciEX0']),
+    ('3. Support and lining fixes', ['DcIw_t7jiQn', 'DVfzFTJk8OF']),
+    ('4. Derotation', ['CtxKAyvsVrC', 'DNlENwgRSK6', 'CvzpOS9LfUA']),
+    ('Other', ['DRKpan3DK2B']),
 ]
 
 BADGES: Dict[str, Tuple[str, str]] = {"INT": ("int", "Internal"), "EXT": ("ext", "External")}
@@ -123,6 +121,15 @@ A = ' target="_blank" rel="noopener"'
 def post_url(key: str) -> str:
     """Return the Instagram post URL for a shortcode."""
     return f"https://www.instagram.com/p/{key}/"
+
+
+def link_html(label: str, url: str, img_dir: Path = IMG) -> str:
+    """Render one card link. A "zoom:KEY" url opens src/img/KEY.webp full screen (see the lightbox script)."""
+    if url.startswith("zoom:"):
+        data = (img_dir / f"{url[5:]}.webp").read_bytes()
+        src = "data:image/webp;base64," + base64.b64encode(data).decode("ascii")
+        return f'<a href="#" class="zoomlink" data-zoom="{src}">{html.escape(label)}</a>'
+    return f'<a href="{url}"{A}>{html.escape(label)}</a>'
 
 
 def card_links(key: str, card: Card) -> List[Link]:
@@ -166,6 +173,12 @@ def img_attrs(key: str, img_dir: Path = IMG) -> str:
     return f'src="data:image/webp;base64,{base64.b64encode(data).decode("ascii")}" width="{w}" height="{h}"'
 
 
+def figure_img_attrs(key: str, img_dir: Path = IMG) -> str:
+    """Attributes for a paper figure: like img_attrs, but never shown wider than its real size, so diagrams aren't stretched."""
+    w, _ = webp_size((img_dir / f"{key}.webp").read_bytes())
+    return f'{img_attrs(key, img_dir)} style="max-width:min(100%,{w}px)"'
+
+
 def render_card(key: str, card: Card, nophoto: Set[str], img_dir: Path = IMG) -> str:
     """Render one example card as a single-line <figure class="ex">."""
     badge, by, why, _ = card
@@ -180,12 +193,12 @@ def render_card(key: str, card: Card, nophoto: Set[str], img_dir: Path = IMG) ->
     if badge:
         cls, label = BADGES[badge]
         b = f'<span class="badge {cls}">{label}</span>'
-    lk = " · ".join(f'<a href="{u}"{A}>{html.escape(t)}</a>' for t, u in links)
+    lk = " · ".join(link_html(t, u, img_dir) for t, u in links)
     return (f'<figure class="ex">{ph}<figcaption>{b}<p class="by">{e_by}</p>'
             f'<p class="why">{e_why}</p><p class="lk">{lk}</p></figcaption></figure>')
 
 
-def render_library(cards: Dict[str, Card], groups: List[Tuple[str, List[str]]]) -> str:
+def render_library(cards: Dict[str, Card], groups: List[Tuple[str, List[str]]], img_dir: Path = IMG) -> str:
     """Render the "Instagram examples by method" lists, one <h4> + <ul> per group."""
     out = []
     for heading, keys in groups:
@@ -198,9 +211,11 @@ def render_library(cards: Dict[str, Card], groups: List[Tuple[str, List[str]]]) 
                 cls, label = BADGES[badge]
                 b = f' <span class="badge {cls}">{label}</span>'
             extra = ""
-            if len(links) > 1:
+            # Zoom links open local images; the sources list only lists places on the web.
+            more = [(t, u) for t, u in links[1:] if not u.startswith("zoom:")]
+            if more:
                 extra = ' <span class="small">(' + ", ".join(
-                    f'<a href="{u}"{A}>{html.escape(t)}</a>' for t, u in links[1:]) + ")</span>"
+                    link_html(t, u, img_dir) for t, u in more) + ")</span>"
             items.append(f'<li><a href="{links[0][1]}"{A}>{html.escape(by)}</a>{b}{extra}'
                          f'<p>{html.escape(why)}</p></li>')
         out.append(f'<h4>{html.escape(heading)}</h4><ul class="lib">{"".join(items)}</ul>')
@@ -218,9 +233,9 @@ def build(template: str, cards: Dict[str, Card], nophoto: Set[str],
           groups: List[Tuple[str, List[str]]], img_dir: Path = IMG) -> str:
     """Replace every placeholder in the template. Unknown keys or missing images raise."""
     out = re.sub(r"EX:([\w-]+)", lambda m: render_card(m.group(1), cards[m.group(1)], nophoto, img_dir), template)
-    out = re.sub(r'src="IMG:([\w-]+)"', lambda m: img_attrs(m.group(1), img_dir), out)
+    out = re.sub(r'src="IMG:([\w-]+)"', lambda m: figure_img_attrs(m.group(1), img_dir), out)
     out = out.replace("LIBCOUNT", str(library_count(cards, groups)))
-    out = out.replace("LIBRARY", render_library(cards, groups))
+    out = out.replace("LIBRARY", render_library(cards, groups, img_dir))
     return out
 
 

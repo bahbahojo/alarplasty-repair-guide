@@ -89,6 +89,18 @@ class RenderTest(unittest.TestCase):
         with self.assertRaises(FileNotFoundError):
             build.render_card("CCC", self.cards["CCC"], set(), self.img)
 
+    def test_zoom_link_opens_local_image(self) -> None:
+        card = ("INT", "Dr. Z", "Two cases.", [("Profile", "https://www.instagram.com/drz/"), ("Second case", "zoom:BBB")])
+        out = build.render_card("ZZZ", card, {"ZZZ"}, self.img)
+        self.assertIn('class="zoomlink" data-zoom="data:image/webp;base64,', out)
+        self.assertIn('<a class="ph none" href="https://www.instagram.com/drz/"', out)
+        lib = build.render_library({"ZZZ": card}, [("1a. Test", ["ZZZ"])], self.img)
+        self.assertNotIn("zoomlink", lib)  # the sources list keeps web links only
+
+    def test_zoom_link_missing_image_fails_fast(self) -> None:
+        with self.assertRaises(FileNotFoundError):
+            build.link_html("Second case", "zoom:NOPE", self.img)
+
     def test_library_and_count(self) -> None:
         groups = [("1. One", ["AAA", "BBB"]), ("2. Two", ["CCC", "AAA"])]
         lib = build.render_library(self.cards, groups)
@@ -96,6 +108,10 @@ class RenderTest(unittest.TestCase):
         self.assertIn('(<a href="https://www.instagram.com/drb/" target="_blank" rel="noopener">His Instagram</a>)', lib)
         # AAA counted once; the profile link on BBB is not a post.
         self.assertEqual(build.library_count(self.cards, groups), 3)
+
+    def test_figures_never_wider_than_real_size(self) -> None:
+        out = build.build('<img src="IMG:AAA" alt="x">', self.cards, set(), [], self.img)
+        self.assertIn('width="800" height="600" style="max-width:min(100%,800px)" alt="x"', out)
 
     def test_build_unknown_key_fails_fast(self) -> None:
         with self.assertRaises(KeyError):
@@ -133,9 +149,11 @@ class SiteDataTest(unittest.TestCase):
         self.assertEqual(hits, [])
 
     def test_composite_cards_are_labeled(self) -> None:
-        """Content rule: every card in the 2a/2b library groups has an Internal/External badge."""
+        """Content rule: every card in the composite graft library groups has an Internal/External badge."""
+        composite = [h for h, _ in build.GROUPS if "composite" in h.lower()]
+        self.assertEqual(len(composite), 2)
         for heading, keys in build.GROUPS:
-            if heading.startswith(("2a", "2b")):
+            if heading in composite:
                 for key in keys:
                     self.assertIn(build.C[key][0], ("INT", "EXT"), key)
 
